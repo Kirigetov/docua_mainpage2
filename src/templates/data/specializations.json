@@ -1,117 +1,94 @@
 [
   {
     "title": "Акушер",
-    "url": "/",
-    "quantity":"130"
+    "url": "/"
   },
   {
     "title": "Аллерголог",
-    "url": "/",
-    "quantity":"110"
+    "url": "/"
   },
   {
     "title": "Андролог",
-    "url": "/",
-    "quantity":"13"
+    "url": "/"
   },
   {
     "title": "Анестезиолог",
-    "url": "/",
-    "quantity":"112"
+    "url": "/"
   },
   {
     "title": "Венеролог",
-    "url": "/",
-    "quantity":"73"
+    "url": "/"
   },
   {
     "title": "Гастроэнтеролог",
-    "url": "/",
-    "quantity":"230"
+    "url": "/"
   },
   {
     "title": "Гематолог",
-    "url": "/",
-    "quantity":"130"
+    "url": "/"
   },
   {
     "title": "Гепатолог",
-    "url": "/",
-    "quantity":"130"
+    "url": "/"
   },
   {
     "title": "Гинеколог",
-    "url": "/",
-    "quantity":"20"
+    "url": "/"
   },
   {
     "title": "Гомеопат",
-    "url": "/",
-    "quantity":"70"
+    "url": "/"
   },
   {
     "title": "Диетолог",
-    "url": "/",
-    "quantity":"130"
+    "url": "/"
   },
   {
     "title": "Иммунолог",
-    "url": "/",
-    "quantity":"130"
+    "url": "/"
   },
   {
     "title": "Инфекционист",
-    "url": "/",
-    "quantity":"130"
+    "url": "/"
   },
   {
     "title": "Кардиолог",
-    "url": "/",
-    "quantity":"1"
+    "url": "/"
   },
   {
     "title": "Косметолог",
-    "url": "/",
-    "quantity":"130"
+    "url": "/"
   },
   {
     "title": "Логопед",
-    "url": "/",
-    "quantity":"130"
+    "url": "/"
   },
   {
     "title": "Отоларинголог",
-    "url": "/",
-    "quantity":"130"
+    "url": "/"
   },
   {
     "title": "Маммолог",
-    "url": "/",
-    "quantity":"130"
+    "url": "/"
   },
   {
     "title": "Терапевт",
-    "url": "/",
-    "quantity":"130"
+    "url": "/"
   },
   {
     "title": "Массажист",
-    "url": "/",
-    "quantity":"130"
+    "url": "/"
   },
   {
     "title": "УЗИ-специалист",
-    "url": "/",
-    "quantity":"130"
+    "url": "/"
   },
   {
     "title": "Уролог",
-    "url": "/",
-    "quantity":"130"
+    "url": "/"
   },
   {
     "title": "Хирург",
-    "url": "/",
-    "quantity":"130"
+    "url": "/"
   }
 ]
