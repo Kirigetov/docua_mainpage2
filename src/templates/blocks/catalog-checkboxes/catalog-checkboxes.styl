@@ -1,0 +1,25 @@
+.catalog-checkboxes
+    @media phone
+        float left
+    &__label
+        float right
+        -webkit-user-select none
+        @media screen560
+            float: none
+        &:not(:last-child) 
+            margin-left 24px
+            @media screen560
+                margin: 0 24px 0 0 
+        input
+            opacity 0
+        span
+            position relative
+            padding-left 7px
+            &:after
+                content ''
+                position absolute
+                left -($checkbox_width)
+                top 4px
+                sprite($checkbox)
+        input:checked + span:after
+            sprite($checkbox_checked)

@@ -1,0 +1,150 @@
+.search-top
+	margin-top 30px
+.search-title
+	font-size 28px
+	font-weight 700
+	color text_color  
+	margin 0
+.rez-search
+	.nav-search
+		padding 0
+		li
+			&:first-child
+				a
+					padding 9px 21px 9px 0
+			a
+				@media only screen and (max-width: 1100px) 
+					padding 9px 15px 
+	.nav-tabs
+		li.active
+			&:after
+				content ""
+				border-color transparent transparent grey_base
+			
+	.tab-content__search
+		border none 
+		#tab-doctors
+			.favorites-block
+				@media only screen and (max-width: 560px)
+					position static
+				@media only screen and (max-width: 450px)
+					position absolute
+			.btn-success
+				@media only screen and (max-width: 560px)
+					width 100%
+					font-size 18px
+					padding 7px 0
+					margin-top 9px
+				@media only screen and (max-width: 450px)
+					margin-top 0
+				
+		.tab-pane
+			-webkit-box-shadow none 
+			box-shadow none 
+			margin-top 24px 
+			// background #f4f8f8 
+			background grey_base
+			
+			.small-card
+				&__right-side
+					@media phone
+            			padding-left 140px
+            		@media screen560
+            			padding-left 0
+				
+			.rating
+				.rating__value
+					float none
+			
+			.doctors-card__list
+				li
+					a
+						color #4b89d3
+			.favorites-block
+				@media phone
+					display block
+					width auto 
+				@media only screen and (max-width: 560px)
+					position absolute
+					top 20px
+					right 20px
+			.load-items
+				span
+					&:before, &:after
+						@media phone
+							display block
+						@media only screen and (max-width: 450px)
+							display none
+						
+				
+							
+	.search-page
+		padding 0
+		margin-bottom 0
+		-webkit-box-shadow none 
+		box-shadow none
+		background grey_base
+		.article-list-item
+			padding 21px
+			border-bottom 1px solid transparent
+			&:last-child
+				border 1px solid transparent
+				&:hover
+					border-color green_base
+		&__article
+			background-color white
+			border-radius 3px
+			box-shadow 0 2px 4px rgba(0, 64, 76, 0.15)
+			margin-bottom 20px
+			border 1px solid transparent
+			transition all .3s linear
+			border-bottom none
+			&:hover
+				box-shadow 0 10px 15px #e3e4ed
+				border-color green_base
+				// border-bottom none
+	.no-rezult
+		background-color white
+		border-radius 3px
+		box-shadow 0 2px 4px rgba(0, 64, 76, 0.15)
+		text-align center
+		padding 30px 20px 35px 20px
+		margin-bottom 50px
+		span
+			
+			font-size 24px
+			font-weight 700
+			line-height 24px
+			color text_color 
+	
+.list-diseases
+	a
+		outline none
+	&__item
+		background-color white
+		border-radius 3px
+		box-shadow 0 2px 4px rgba(0, 64, 76, 0.15)
+		padding 21px
+		margin-bottom 20px
+		border 1px solid transparent 
+		transition all .3s linear
+		&:hover
+			box-shadow 0 10px 15px #e3e4ed
+			border-color green_base
+	&__link
+		display block
+		font-size 18px
+		font-weight 700
+		color blue_link
+		padding-bottom 10px
+		
+	&__text
+		font-size 15px
+		font-weight 400
+		line-height 20px
+		color text_color
+.gag
+	height 40px
+		
+		
+		

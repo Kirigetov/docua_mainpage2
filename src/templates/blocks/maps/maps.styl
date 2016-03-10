@@ -1,0 +1,187 @@
+.widget-map
+  position relative
+  overflow: hidden
+  
+  .btn
+    position: absolute
+    left 50%
+    bottom 40px
+    width 188px
+    margin-left -94px
+    padding-left 12 + $expand_map_width
+    font-size 16px
+    &:before
+      content ''
+      position absolute
+      left 15px
+      top 8px
+      sprite($expand_map)
+    @media phone_tablet
+      width 150px
+      font-size 15px
+      margin-left -75px
+      &:before
+        left 8px
+        padding-left 6 + $expand_map_width
+
+/*.marker-window*/
+  /*display none*/
+.map-marker-content
+  background #fff
+  border-radius border_radius_sm
+  box-shadow 0 5px 11px #DDDADA
+  font-size 11px
+  width: 220px
+  padding-bottom: 8px
+  .image
+    text-align center
+  .marker-logo
+    width 115px
+    margin-bottom 10px
+  .title
+    display block
+    font-weight 700
+    font-size 16px
+    color: #4b89d3
+  .card__address
+    width 100%
+    margin 9px 0 9px
+  .marker-review
+    float right
+    font-size 16px
+    color: #4b89d3
+  .rating
+    &__value
+      // float left
+      display: inline-block
+      vertical-align: top
+      top 0
+      font-size: 20px
+    &__stars
+      margin 4px 0 0 5px
+  .btn
+    font-size: 16px
+    line-height: 1
+    padding: 14px 15px 13px 
+
+  footer
+  .btn
+    width 100%
+    margin-top 20px
+
+.modal-body-map
+  height 500px
+  #modal-map
+    width 100% !important
+    height 500px !important
+
+.marker-window 
+  overflow: visible !important
+.gm-style-iw
+  > div
+    overflow: visible !important
+    > div
+      overflow: visible !important
+  .map-marker-content
+    box-shadow: none
+.big-map
+  &__container
+    width 80%
+    @media only screen and (max-width: 1400px)
+      width 75%
+      position: relative
+    @media only screen and (max-width: 992px)
+      width: 65%
+    @media phone
+      width: 100%
+  &__widget
+    position absolute
+    right 0
+    top 0
+    width 20%
+    height 100%
+    background #fff
+    overflow: hidden
+
+    @media only screen and (max-width: 1400px)
+      width 25%
+    @media only screen and (max-width: 992px)
+      width: 35%
+    @media phone
+      position: relative
+      width: 100%
+    .short-list
+      border-radius 0
+      border 0px
+
+      &__header
+        padding 0 10%
+        height 84px
+        color #fff
+        text-align left
+        background green_base
+        @media phone
+          height: 45px
+          padding: 0 10px 
+          text-align: center
+        .count
+          float left
+          font-weight 700
+          font-size 43px
+          line-height 60px
+          padding 12px 0
+          margin-right 15px
+          @media phone
+            font-size: 24px
+            line-height: 45px
+            padding: 0
+            margin-right: 10px
+            float: none
+            display: inline-block
+            vertical-align: middle
+        .title
+          font-size 16px
+          line-height 20px
+          height 100%
+          display table
+          @media phone
+            display: inline-block
+            vertical-align: middle
+            height: auto
+          >span
+            vertical-align middle
+            display table-cell
+            @media phone
+              display: inline-block
+              vertical-align: middle
+      &__items
+        padding-top 0
+      &__item
+        padding 20px
+        margin-bottom 0
+        &:first-child
+          border-top transparent
+  .map-canvas-big
+    @media phone
+      // height: 370px !important
+.big-map__widget
+  .jspVerticalBar
+    width: 1px
+    background-color: #c0d2d6
+    left: auto
+    right: 10px
+  .jspDrag
+    background-color: #c0d2d6
+    width: 3px
+    left: -1px
+    border-radius: 3px
+  .short-list__items
+    padding-right: 19px
+  .short-list__item
+    padding: 16px 19px 16px
+    @media phone
+      padding: 11px 16px 
+    &.last-child
+      border-bottom: 1px dashed #96b8bf 
+  .short-list__image
+    margin-bottom: 5px

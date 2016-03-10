@@ -1,0 +1,202 @@
+.card__mod
+    margin-bottom 0
+.btn-media
+    @media only screen and (max-width: 1200px)
+        position absolute
+        right 20px
+        top 55px
+    @media only screen and (max-width: 992px)
+        top 90px
+    @media screen560
+        position static
+        float right
+        margin 0
+        margin-top -5px
+        padding 5px 8px !important
+.small-card__action-mod
+    span.orange-light
+        background-color #ffc02a
+        // &:before
+        //     border-right: 2px solid #ffc02a
+        &:after
+            border-color: none
+            border none
+            border-left none
+            background url('i/icons/head-tringle.png') no-repeat center
+            display inline-block
+            right -11px
+            width 19px
+            height 22px
+    
+.tab-content__diagnostic-center 
+    margin-bottom 40px    
+.price-item__mod
+    position relative
+    padding 20px 20px 10px 20px 
+    cursor pointer
+    border-bottom 1px solid #c0d2d6
+    @media screen560
+        padding 20px 20px 50px 20px 
+    &:first-child
+        border-top none
+    &:hover
+        background-color #e5f2f5
+        z-index 2
+        border-bottom 1px solid transparent
+    &:hover .btn-hide
+        display inline-block 
+        margin-left 20px
+        float none
+    
+    &:hover .row-in-price__mod:before
+        background-color green_base
+    &:hover .diagnostic-line
+        background-color transparent 
+    // .diagnostic-line
+    //     width 100%
+    //     height 1px
+    //     background-color #c0d2d6
+    //     margin-top 10px 
+    //     margin-bottom -10px
+    &.price-none__border
+        border-bottom none
+    .btn-hide
+        display none
+        vertical-align middle
+    .row-price__mod
+        padding 0 0 0 20px
+        &:hover
+            background none
+    .block-sevices__list-mod
+        .row-in-price__mod
+            border-bottom none
+            &:hover:before
+                background-color none 
+            
+                    
+    .block-services__price-discount
+        @media screen560
+            position absolute
+            bottom 10px
+            height 40px
+            text-align left
+            
+.block-services__title-mod
+    padding 0 
+    margin 0 20px
+    border-top 1px solid #c0d2d6
+    clearfix()
+    strong
+        padding 13px 0 13px 0px
+        display inline-block
+        @media screen560
+            float left
+            width 100%
+            
+        
+    .block-services__price-discount
+        float right
+        padding 9px 0 
+        line-height 1.8
+        @media screen560
+            float left
+            margin-left 0
+            padding 7px 0
+            line-height 2.2 
+            
+    a.btn-hide
+        display none
+    &:hover .btn-hide
+        display inline-block
+        float none
+        margin 0px 0 0px 21px
+        padding 2px 22px 4px
+.item-with-btn
+    &:hover
+        background-color #e5f2f5
+
+              
+.diagnostic-reviews
+    clearfix()
+    background-color #fff9e9
+    padding 20px 0 
+    &__numder
+        color #00829b
+        font-size 48px
+        font-weight 700
+    span
+        font-size 14px
+        color #5e6e71 
+        padding-bottom 15px 
+    &__left-side
+        position relative
+        text-align center
+        border-right 1px dashed #c0d2d6 
+        width 50%
+        float left
+        .likebox-diagnostic
+            &:after
+                content ''
+                display table
+                clear both
+            *zoom 1
+            display inline-block
+            margin-left 0
+    .likebox-block
+        line-height 68px
+        .like-box__like
+            vertical-align middle
+            &:before
+                content ''
+                display inline-block
+                sprite($like)
+                margin-right 5px
+        .like-box__dislike
+            vertical-align middle
+            &:before
+                content ''
+                display inline-block
+                sprite($not_like)
+                margin-right 5px
+        .like-box__votes
+            font-size 22px
+            margin 2px 0 0 5px
+            
+        
+    &__right-side
+        text-align center
+        width 50%
+        float left 
+    
+    .reviews-info
+        display inline-block
+        padding 0 10px
+        &__icon
+            display inline-block
+            vertical-align middle
+            width 17px
+            height 17px
+            background url('i/question-icon.png') no-repeat
+            margin-right 6px
+        &__link
+            text-decoration none
+            border-bottom 1px dotted 
+            color #5e6e71
+            
+.reviews-list__mod
+    .reviews-list__content
+        padding-right 0
+        .reviews-list__name
+            @media phone
+                display inline
+        .reviews-list__date
+            @media phone
+                float right
+                margin-top 5px
+
+
+//hidden aside map
+.time-hidden
+    @media phone
+        display none
+        

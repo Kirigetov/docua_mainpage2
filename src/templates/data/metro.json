@@ -1,0 +1,314 @@
+[
+  {
+    "title": "Академгородок",
+    "class": "color-red",
+    "x": 18,
+    "y": 99
+  },
+  {
+    "title": "Житомирская",
+    "class": "color-red",
+    "x": 18,
+    "y": 124
+  },
+  {
+    "title": "Святошин",
+    "class": "color-red",
+    "x": 18,
+    "y": 150
+  },
+  {
+    "title": "Нивки",
+    "class": "color-red",
+    "x": 32,
+    "y": 176
+  },
+  {
+    "title": "Берестейская",
+    "class": "color-red",
+    "x": 22,
+    "y": 217
+  },
+  {
+    "title": "Шулявская",
+    "class": "color-red",
+    "x": 90,
+    "y": 176
+  },
+  {
+    "title": "Политехнический институт",
+    "class": "color-red icon-left",
+    "x": 32,
+    "y": 242
+  },
+  {
+    "title": "Вокзальная",
+    "class": "color-red",
+    "x": 174,
+    "y": 257
+  },
+  {
+    "title": "Университет",
+    "class": "color-red",
+    "x": 175,
+    "y": 221
+  },
+  {
+    "title": "Театральная",
+    "class": "color-red icon-left",
+    "x": 206,
+    "y": 199
+  },
+  {
+    "title": "Крещатик",
+    "class": "color-red",
+    "x": 338,
+    "y": 217
+  },
+  {
+    "title": "Арсенальная",
+    "class": "color-red",
+    "x": 402,
+    "y": 217
+  },
+  {
+    "title": "Днепр",
+    "class": "color-red",
+    "x": 491,
+    "y": 217
+  },
+  {
+    "title": "Гидропарк",
+    "class": "color-red",
+    "x": 551,
+    "y": 217
+  },
+  {
+    "title": "Левобережная",
+    "class": "color-red icon-left",
+    "x": 557,
+    "y": 170
+  },
+  {
+    "title": "Дарница",
+    "class": "color-red icon-left",
+    "x": 624,
+    "y": 135
+  },
+  {
+    "title": "Черниговская",
+    "class": "color-red icon-left",
+    "x": 636,
+    "y": 96
+  },
+  {
+    "title": "Лесная",
+    "class": "color-red icon-left",
+    "x": 681,
+    "y": 46
+  },
+  {
+    "title": "Героев Днепра",
+    "class": "color-blue",
+    "x": 361,
+    "y": -7
+  },
+  {
+    "title": "Минская",
+    "class": "color-blue",
+    "x": 362,
+    "y": 19
+  },
+  {
+    "title": "Оболонь",
+    "class": "color-blue",
+    "x": 362,
+    "y": 44
+  },
+  {
+    "title": "Петровка",
+    "class": "color-blue",
+    "x": 362,
+    "y": 70
+  },
+  {
+    "title": "Тараса Шевченко",
+    "class": "color-blue",
+    "x": 362,
+    "y": 95
+  },
+  {
+    "title": "Контрактовая площадь",
+    "class": "color-blue",
+    "x": 362,
+    "y": 121
+  },
+  {
+    "title": "Почтовая площадь",
+    "class": "color-blue",
+    "x": 362,
+    "y": 146
+  },
+  {
+    "title": "Площадь Независимости",
+    "class": "color-blue",
+    "x": 362,
+    "y": 171
+  },
+  {
+    "title": "Площадь Льва Толстого",
+    "class": "color-blue icon-left",
+    "x": 177,
+    "y": 281
+  },
+  {
+    "title": "Олимпийская",
+    "class": "color-blue icon-left",
+    "x": 226,
+    "y": 306
+  },
+  {
+    "title": "Дворец Украина",
+    "class": "color-blue icon-left",
+    "x": 210,
+    "y": 341
+  },
+  {
+    "title": "Лыбедская",
+    "class": "color-blue icon-left",
+    "x": 238,
+    "y": 376
+  },
+  {
+    "title": "Демиевская",
+    "class": "color-blue icon-left",
+    "x": 215,
+    "y": 401
+  },
+  {
+    "title": "Голосеевская",
+    "class": "color-blue",
+    "x": 285,
+    "y": 445
+  },
+  {
+    "title": "Васильковская",
+    "class": "color-blue",
+    "x": 159,
+    "y": 434
+  },
+  {
+    "title": "Выставочный центр",
+    "class": "color-blue",
+    "x": 86,
+    "y": 477
+  },
+  {
+    "title": "Ипподром",
+    "class": "color-blue",
+    "x": 83,
+    "y": 419
+  },
+  {
+    "title": "Теремки",
+    "class": "color-blue",
+    "x": 52,
+    "y": 383
+  },
+  {
+    "title": "Сырец",
+    "class": "color-green",
+    "x": 230,
+    "y": 36
+  },
+  {
+    "title": "Дорогожичи",
+    "class": "color-green",
+    "x": 229,
+    "y": 80
+  },
+  {
+    "title": "Лукьяновская",
+    "class": "color-green",
+    "x": 252,
+    "y": 125
+  },
+  {
+    "title": "Золотые ворота",
+    "class": "color-green icon-left",
+    "x": 185,
+    "y": 178
+  },
+  {
+    "title": "Дворец спорта",
+    "class": "color-green",
+    "x": 378,
+    "y": 247
+  },
+  {
+    "title": "Кловская",
+    "class": "color-green",
+    "x": 406,
+    "y": 272
+  },
+  {
+    "title": "Печерская",
+    "class": "color-green",
+    "x": 428,
+    "y": 300
+  },
+  {
+    "title": "Дружбы народов",
+    "class": "color-green",
+    "x": 437,
+    "y": 346
+  },
+  {
+    "title": "Выдубичи",
+    "class": "color-green",
+    "x": 455,
+    "y": 387
+  },
+  {
+    "title": "Славутич",
+    "class": "color-green",
+    "x": 482,
+    "y": 434
+  },
+  {
+    "title": "Осокорки",
+    "class": "color-green icon-left",
+    "x": 525,
+    "y": 391
+  },
+  {
+    "title": "Позняки",
+    "class": "color-green icon-left",
+    "x": 556,
+    "y": 376
+  },
+  {
+    "title": "Харьковская",
+    "class": "color-green icon-left",
+    "x": 558,
+    "y": 350
+  },
+  {
+    "title": "Вырлица",
+    "class": "color-green icon-left",
+    "x": 607,
+    "y": 324
+  },
+  {
+    "title": "Бориспольская",
+    "class": "color-green icon-left",
+    "x": 595,
+    "y": 293
+  },
+  {
+    "title": "Красный хутор",
+    "class": "color-green icon-left",
+    "x": 595,
+    "y": 264
+  }
+]

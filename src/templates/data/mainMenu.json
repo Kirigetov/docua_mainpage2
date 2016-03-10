@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Каталог врачей",
+    "url": "/doctors.html",
+    "dataLink": "Каталог врачей"
+  },
+  {
+    "title": "Клиники",
+    "url": "/clinics.html",
+    "dataLink": "Клиники"
+  },
+  {
+    "title": "Диагностика",
+    "url": "/diagnostic-centers.html",
+    "dataLink": "Диагностика"
+  },
+  {
+    "title": "Спецпредложения",
+    "url": "/promo.html",
+    "dataLink": "Спецпредложения"
+  }
+]

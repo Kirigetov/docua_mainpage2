@@ -1,0 +1,56 @@
+.load-items
+  display block
+  padding 18px 0
+  color text_blue
+  font-size 24px
+  text-align center
+  text-decoration none
+  background #fff
+  border 1px solid #F5F6F9
+  border-radius 3px
+  border-radius border_radius_sm
+  box-shadow: 0 2px 4px rgba(0, 64, 76, 0.15)
+  transition border-color 0.2s ease, box-shadow 0.2s ease
+  margin-bottom 20px
+  &:hover
+    color text_blue
+    box-shadow 0 10px 15px #e3e4ed
+    border-color green_base
+  &.load-items__modifie
+    box-shadow: none
+    &:hover
+      box-shadow none
+  span
+    position relative
+    &:before, &:after
+      content ''
+      position absolute
+      top 8px
+      sprite($arrows_down2)
+      @media phone
+        display none
+
+    &:before
+      left -($arrows_down2_width + 30)
+    &:after
+      right -($arrows_down2_width + 30)
+  &-mod
+    color: #96b8bf
+    font-size: 18px
+    line-height: 20px
+    position: relative
+    display: inline-block
+    vertical-align: top
+    padding: 0 0 0 25px 
+    text-decoration: none
+    &:hover
+      color darken(#96b8bf, 20%)
+    &:before
+      content: "" 
+      position: absolute
+      top: 50%
+      left: 0
+      margin-top: -6px
+      width: 15px
+      height: 12px
+      background: url("i/icons/load-items-mod.png") no-repeat center center

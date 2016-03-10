@@ -1,0 +1,2136 @@
+html
+    background red
+html, body
+    background grey_texture
+    min-width: 320px
+body
+    &.lock
+        height 100%
+        overflow hidden  
+    >.container-fluid //parallax overflow
+        position relative
+        // z-index 2
+        // >.row:not(.row-finder)
+        //     background grey_base
+            // background #E3E8E8 
+        &.container-finder
+            z-index 3 
+        &.container-menu
+            z-index 5
+            border-top 1px solid #f2f9fa
+            background #fff
+        &.container-header
+            z-index 6
+            padding-bottom 11px
+            background #fff
+        .row-finder
+            position relative
+            // z-index 4
+    &.body-map
+        height 100%
+        overflow hidden
+        @media phone
+            height: auto
+            overflow: visible
+ul
+    list-style: none
+    margin: 0
+    padding: 0
+
+    &.style-disc
+      padding-left: 20px
+      li
+          position: relative
+          margin-bottom: 4px
+          padding-left: 20px
+          line-height: 1.75
+          &:before
+              content "•"
+              position: absolute
+              top: 0
+              left: 0
+              font-size: 22px
+              line-height: 24px
+              color: #96b8bf
+.container-bg
+    // z-index 4
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0       
+    background-image url("/i/parallax-bg2.jpg")
+    background-repeat no-repeat
+    background-size cover
+    z-index -1 
+.main-container
+    &:before
+        content ""
+        position absolute
+        top 0
+        left 0
+        right 0
+        bottom 0   
+        background-color #fff 
+.navbar-fixed-top
+    position fixed
+    @media phone
+        position relative
+
+.prarallax-wrap
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 750px
+    @media tablet_desktop
+        background url('i/parallax-bg2.jpg') center center no-repeat
+        background-size contain
+    @media tablet
+        position absolute
+.row
+    &-white
+        background #fff !important
+    &-blog
+        padding-bottom 30px
+    &-finder
+        @media phone
+            background transparent
+
+            .container
+                margin-bottom 40px
+                @media phone
+                    margin-bottom 10px
+
+a
+    transition all .2s ease-in-out
+    text-decoration underline
+    &:hover
+        color inherit
+        text-decoration none
+    &:focus
+        outline none 
+    &.grey
+        color text_color
+    &.under-dot
+        text-decoration none
+        span
+            transition all .2s ease-in-out
+            border-bottom 1px dotted blue_base
+        &:hover
+            span
+                border-color transparent
+a, span
+    &.dotted
+        text-decoration none
+        border-bottom 1px dotted
+        line-height 1
+        display inline-block
+a.dotted:hover, a:hover span.dotted
+    border-bottom-color transparent
+
+.offset-bottom-0
+  margin-bottom: 0!important
+  padding-bottom: 0!important
+
+.offset-top-25
+    margin-top: 25px!important
+
+hr
+    border-color #bbcfd3
+    &.dotted
+        border-style dotted
+    &.dashed
+        border-style dashed
+    &.invisible
+        border-style solid
+        border-color transparent
+        border-width 0
+    &.color
+        border-color #00829b
+        border-width 2px
+        margin 13px 0 11px
+
+input[type="text"]::-ms-clear
+    display none
+
+.splash.island
+    width 100%
+    margin-bottom 20px
+    padding 20px
+    background #fff
+    border-radius border_radius_sm
+    box-shadow 0 2px 3px #e3e4ed
+    clearfix()
+// Finder popups
+.districts-check-list
+    margin 0
+    padding 0
+    list-style none
+    // min-height 500px
+    li
+        margin 0 0 20px
+        padding 0
+        list-style none
+        font-weight bold
+        font-size 16px
+        line-height 24px
+        ul 
+            margin 0
+            padding 0
+        li
+            font-weight normal
+            font-size 15px
+            line-height 22px
+            margin-bottom 0
+
+.metro-map
+    position relative
+    width 895px
+    height 580px
+    margin 0 auto
+    background url('i/metro-map.png') no-repeat top left transparent
+    @media tablet
+        transform scale(0.8)
+        margin -50px auto
+    @media phone
+        width auto
+        height auto
+        background none
+        margin-bottom 20px
+    .pill
+        position absolute
+        margin 0
+        font-size 12px
+        @media phone
+            position static
+            display block
+            font-size 14px
+            margin-bottom 2px
+        &.icon-left
+            margin-left -15px
+            @media phone
+                margin-left inherit
+    &_kharkiv
+        height 565px
+        background url('i/metro-map-kharkiv.png') no-repeat 115px 0 transparent
+
+
+
+.pill
+    input
+        position absolute
+        opacity 0
+    >span
+        border-radius 12px
+        text-decoration none
+        padding 1px 10px
+        color #000
+        display inline-block
+        cursor pointer
+        > span
+            line-height 1
+            border-bottom 1px dotted
+            transition border-color .2s ease-in-out
+        &:hover
+            background-color transparent
+            > span
+                border-bottom-color transparent
+    input:checked
+        + span
+            &
+            &:hover
+            &:focus
+                color white
+                background-color #00829b
+                > span
+                    border-bottom-color transparent
+
+form
+    input.form-control, textarea.form-control
+        color form_input_color
+        placeholder(#91b5bc, 14px)
+    textarea
+        resize vertical
+
+.error-message
+    display none
+    position absolute
+    z-index 5
+    top 100%
+    left 15px
+    right 15px
+    width auto
+    color #fff
+    background-color #ff4f4f
+    border-radius 0 0 3px 3px
+    padding 5px
+    font-size 12px
+    line-height 14px
+    .input-group &
+        left 0
+        width 100%
+    @media phone
+        left 10px
+        right 10px
+.middle
+    font-size 125% 
+.large
+    font-size 135%
+
+.border-box
+    position relative
+    border 1px solid #ccc
+    border-radius 3px
+    padding 20px
+    margin-bottom 30px            
+.datepicker-icon
+    position relative
+    width 13px
+    height 13px
+    margin 9px 10px 0 0
+
+    &:before
+        content ""
+        position absolute
+        top 50%
+        left 50%
+        margin-left -7px
+        margin-top -7px
+        font-size 22px
+        line-height 24px
+        color #96b8bf
+        sprite($date_grid)
+
+.docicon-shadow-doc
+    sprite($green_doctor)
+.docicon-shadow-clinic
+    sprite($green_clinic)
+
+
+// Footer blog links.blog-links
+.blog-links
+    @media tablet
+        margin-top 20px
+        &__item
+            float left
+            width 50%
+            padding-right 2%
+    &__item
+        margin-bottom 6px
+        &:last-child
+            margin-bottom 0
+        a
+            font-size 15px
+            line-height 20px
+            text-decoration underline
+            &:hover
+                text-decoration none
+
+.abs
+    position absolute
+.abs-helper
+    position relative
+    white-space nowrap
+    margin-left 10px
+    .abs
+        top 0
+        left 0
+
+.inline-block
+    display inline-block
+    margin 0
+    vertical-align middle
+    ul&
+        li
+            margin 0
+            padding-left 0
+            padding-right 0
+            display inline-block
+        li, li a, li span
+            padding-top 0
+            font-size inherit
+            line-height inherit
+
+.nav-pills
+    > li
+        &, & + li
+            margin 0 0 5px 0
+        &.active a
+            // posa
+            padding-bottom 0
+            border-radius 12px
+            color: #fff;
+            background-color: #00829b;
+            span
+                border-color transparent
+        >a
+            padding 1px 10px
+            outline none
+            &>span
+                line-height 1.2
+                display: inline-block;
+                border-bottom: 1px dotted;
+                transition: border-color .2s ease-in-out;
+.modal-title .nav-pills.inline-block>li>a
+    padding-left 15px
+    padding-right 15px
+
+ul
+    &.border-dotted
+        margin 0 -15px 10px
+        padding 0 0 15px
+        list-style none
+        font-size 15px
+        position relative
+        clearfix()
+        &:before
+            content ""
+            display block
+            height 2px
+            background-color #9adfd6
+            border-width 0 15px
+            border-color white
+            border-style solid
+            position absolute
+            bottom 0
+            left 0
+            width 99%
+        li
+            border-bottom 1px dotted #ccc
+            margin-left 15px
+            margin-right 15px
+            &:last-child
+                border-bottom-color transparent
+        a
+            display block
+            padding 5px 0
+        .column
+            li:last-child
+                border-bottom 0 none
+        .first
+            li
+                margin-left 0  
+// main-content
+.main-content
+    .index-page-header  
+        &.header-styled
+            margin-top 30px 
+            margin-bottom 0 
+            @media phone
+                margin-top 20px 
+                .h1
+                    font-size 22px
+                    text-align center
+        
+    h1
+        margin-top 0
+        margin-bottom 12px
+        font-weight 700
+        font-size 28px
+    .content-inner
+        margin-bottom 20px
+        padding 20px
+        background #fff
+        border-radius border_radius_sm
+        box-shadow 0 2px 4px #e3e4ed
+    .rich-content
+        font-size 15px
+        em
+            font-weight 400
+            font-size 18px
+            margin 20px 0
+        h1
+            font-weight 700
+            font-size 28px
+            margin 20px 0
+        h2
+            font-weight 700
+            font-size 24px
+            line-height 18px
+            margin 20px 0
+        h3
+            font-weight 700
+            font-size 18px
+            line-height 18px 
+            margin 20px 0
+            
+        h4
+            font-weight 700
+            font-size 15px
+            line-height 18px
+            margin 20px 0
+        h5
+            font-weight 700
+            font-size 13px
+            margin 20px 0
+        h6
+            font-size 14px
+            font-weight 400
+            line-height 20px
+            margin 20px 0
+        .div-color
+            padding 35px 40px
+            border-radius 3px
+            margin 20px 0
+            &.bg-blue
+                background-color #e5f2f5
+            &.bg-yellow   
+                background-color #fff9e9
+            &.bg-pink  
+                background-color #fddfdf
+        blockquote 
+            padding: 0 0 0 50px
+            position: relative
+            font-style: italic
+            border-left none
+            border-radius 3px
+            @media phone
+                padding: 0 0 0 20px 
+            &:before
+                content: "“"
+                color: #a3c1c7
+                font-size: 120px
+                line-height: 0.8
+                position: absolute
+                top: 0
+                left: -12px        
+                @media phone
+                    font-size: 70px
+            div
+                background-color: #e5f2f5
+                border-left: 1px solid #c0d7dc
+                padding: 29px
+                font-size: 15px
+                line-height: 24px 
+                @media phone
+                    padding: 10px 
+        table
+            width 100% 
+            margin 20px 0
+            outline none 
+            border-radius 3px 
+            moz-border-radius 3px
+            -webkit-border-radius 3px
+            border-collapse separate 
+            margin-bottom 30px
+            border 1px solid rgba(0,130,155,.16) 
+            th
+                height 49px
+                background-color #00829b
+                border 1px solid #00829b 
+                color #FFF
+                font-size 17px
+                font-weight 700
+                &:first-child
+                    background-color #00829b
+                    padding-left 29px  
+                    text-align left
+                    border-top-left-radius 3px
+                    moz-border-top-left-radius 3px
+                    -webkit-border-top-left-radius 3px 
+                &:last-child
+                    text-align center
+                    background-color #00829b
+                    border-top-right-radius 3px
+                    moz-border-top-right-radius 3px
+                    -webkit-border-top-right-radius 3px  
+                    border-left 1px solid rgba(#fff, 0.2)
+                    padding 0 10px 
+            tr
+                height 47px
+                background-color rgba(#e5f2f5, 0.48)
+                color text_color
+                font-size 15px
+                font-weight 400 
+                &:nth-child(even)
+                    background-color white
+                td
+                    padding-left 29px
+                    &:first-child
+                        border-right 1px solid rgba(#00829b, 0.14)
+                    &:last-child
+                        padding 0
+                        text-align center
+                &:last-child
+                    td
+                        &:first-child
+                            border-bottom-left-radius 3px
+                            moz-border-bottom-left-radius 3px
+                            -webkit-border-bottom-left-radius 3px 
+                        &:last-child
+                            border-bottom-right-radius 3px
+                            moz-border-bottom-right-radius 3px
+                            -webkit-border-bottom-right-radius 3px
+        img.full-width
+            margin 10px -20px
+        ul
+            padding-left: 20px
+            margin 10px 0
+            li
+                position: relative
+                margin-bottom: 4px
+                padding-left: 20px
+                line-height: 1.75
+                &:before
+                    content "•"
+                    position: absolute
+                    top: 0
+                    left: 0
+                    font-size: 22px
+                    line-height: 24px
+                    color: #96b8bf
+                >ul
+                    padding-left 0
+                    margin 0
+                    >li
+                        &:before
+                            content ""
+                            border 1px solid #96b8bf
+                            border-radius 50%
+                            width 7px
+                            height 7px
+                            top 9px
+        .style-numeric
+            counter-reset li
+            list-style none
+            padding-left 20px
+            margin 10px 0
+            li
+                position relative
+                padding-left 20px
+                line-height: 2
+                &:before
+                    content counter(li) '. '
+                    counter-increment li
+                    font-weight bold
+                    position absolute
+                    left 0
+                    top 0
+        .hyphen-lists
+            li
+                padding-left 15px
+                &:before
+                    content "-"
+                    color text_color
+        .doctor-prifile
+            width 140px
+            padding 10px 10px 15px 
+            margin 5px 20px 20px 0
+            -webkit-border-radius 3px
+            border-radius 3px
+            background-color #def5f2
+            -webkit-box-shadow 5px 5px 0 #f0fbfa
+            box-shadow 5px 5px 0 #f0fbfa
+            font-size 14px
+            line-height 1.285
+            &__image
+                margin -10px -10px 10px
+                overflow hidden
+                height 185px
+                -webkit-border-radius 3px 3px 0 0
+                border-radius 3px 3px 0 0
+            &__row
+                margin-bottom 10px
+            &__label
+                font-weight bold
+                color #000002
+        .doctors-card, .card-list
+            padding 0
+            margin 20px 0
+            .doctors-card__item
+                line-height normal
+                padding 21px 21px 19px 110px 
+                &:before
+                    content ''
+                @media screen560
+                    padding-left 21px
+                .doctors-card__container
+                    .doctors-card__list
+                        padding 0
+                        margin 0
+                        li
+                            padding-left 0
+                            line-height normal 
+                            &:before
+                                content ''
+                    .favorites-block
+                        @media phone
+                            width auto
+                            display block
+                        @media only screen and (max-width: 450px)   
+                            position absolute
+                            top 20px
+                            right 20px
+        .card-list
+            .small-card
+                line-height normal
+                padding-left 0
+                font-size 14px
+                &:before
+                    content ''
+                .small-card__right-side
+                    @media phone_tablet
+                        margin-left 180px
+                    @media screen560
+                        margin-left 0
+                        padding-left 20px
+                    .favorites-block
+                        @media phone
+                            width auto
+                            display block
+                        @media only screen and (max-width: 560px)   
+                            position absolute
+                            top 20px
+                            right 20px
+                .small-card__schedule
+                    ul
+                        padding 0
+                        margin 0
+                        li
+                            padding-left 0
+                            line-height normal 
+                            &:before
+                                content ''
+            
+                            
+                            
+        .note
+            position relative
+            margin 28px 0 28px 75px
+            padding-left 25px
+            font-style italic
+            border-left 1px solid text_blue
+            &:before
+                content ""
+                position absolute
+                top 50%
+                left -57px
+                margin-top -13px
+                sprite($dcoma)
+    .info-link
+        position relative
+        float right
+        display block
+        margin-top 5px
+        padding-left ($info_width + 5)
+        color text_blue
+        text-align right
+        outline none
+
+        @media phone
+            float none
+            text-align left
+            margin-top 0
+            margin-bottom 10px
+        &:before
+            content ''
+            position absolute
+            left 0
+            top 3px
+            margin-right 5px
+            display inline-block
+            sprite($info)
+        &__details
+            overflow hidden
+            max-height 0
+            transition max-height 0.5s ease-in-out
+            &_active
+                max-height 1000px
+    .catalog-controls
+        margin-bottom 20px
+        font-size 16px
+        clearfix()
+        &__results
+            display inline-block
+            margin-right 3px
+            @media phone_tablet
+                display: block
+        .catalog-controls__column
+            float left 
+        .catalog-controls__right-side
+            float right       
+        @media phone_tablet
+            margin-bottom 10px
+            .catalog-controls__column
+                margin-bottom 10px
+        .select7
+            @media phone
+                margin-right 60px
+            @media screen560
+                &__current
+                    padding-left 11px
+            &__current-value
+                color link_color
+
+    .nav-tabs
+        width 100%
+        padding-left 4px
+        border-color blue_light
+        >li
+            >a
+                padding 9px 21px 9px
+                font-size 16px
+                text-decoration none
+                border 0 !important
+                outline none
+                color: #4b89d3
+                &:hover
+                    background-color transparent
+                    border 0
+            &.active
+                position: relative
+                &:before, &:after
+                    content ''
+                    position absolute
+                    width 0
+                    height 0
+                    left 50% 
+                &:before 
+                    bottom 0
+                    margin-left: -8px
+                    border-style: solid
+                    border-width: 0 6px 6px
+                    border-color: transparent transparent blue_light !important
+                &:after
+                    bottom -1px
+                    margin-left: -8px
+                    border-style: solid
+                    border-width: 0 6px 6px 6px
+                    border-color: transparent transparent #fff transparent
+                a
+                    color text_color
+                    font-weight 700
+                    background-color transparent
+            &.is-action
+                &:after
+                    border-color: transparent transparent grey_base !important
+            &.is-color-triangle
+                &:after
+                    border-color: transparent transparent #fff9e9 !important 
+        &.nav-clinic
+            >li:nth-child(1).active, >li:nth-child(3).active
+                &:after
+                    border-color transparent transparent yellow_light
+            >li:nth-child(4).active
+                &:after
+                    border-color transparent transparent grey_base
+        &.nav-doctor
+            >li:nth-child(1).active, >li:nth-child(2).active
+                &:after
+                    border-color transparent transparent yellow_light
+            >li:nth-child(3).active
+                &:after
+                    border-color transparent transparent grey_base
+        @media phone
+            padding-left 0
+            border-color transparent 
+            li
+                float none
+                text-align center
+                background blue_base
+                margin-bottom 3px
+                &:before, &:after
+                    display none
+                &.active
+                    background-color green_base
+                    a
+                        color #fff
+                        font-weight 400
+                a
+                    padding 3px 0
+                    color #fff
+    .tab-content
+        border 1px solid #F5F6F9 
+        &.tab-content__mod
+            border none  
+        .rating
+            &__value
+                float: right
+                margin-left: 6px
+        .pagination
+            margin-bottom 0
+            padding-bottom 20px
+        .text
+            padding 20px 40px
+            @media phone
+                padding 20px
+            font-size: 15px
+            clearfix()
+            p
+                margin: 0
+                &.doctor-title
+                    margin-bottom: 6px
+                    font-size: 18px
+            ul.about-list
+                margin-bottom: 26px
+            ul.doctor-list
+                padding: 0 0 4px 30px 
+                @media phone
+                    padding-left: 0
+                li
+                    line-height: 20px
+                    font-size: 15px
+                    padding: 0 0 0 25px 
+                    position: relative
+                    margin-bottom: 15px
+                    &:before
+                        content: "" 
+                        width: 8px
+                        height: 8px
+                        background-color: #96b8bf
+                        border-radius: 50%
+                        position: absolute
+                        top: 6px
+                        left: 0
+            ul
+                list-style: none
+                margin: 0
+                padding: 0
+                padding-left: 20px
+                li
+                    position: relative
+                    margin-bottom: 4px
+                    padding-left: 20px
+                    line-height: 1.75
+                    &:before
+                        content "•"
+                        position: absolute
+                        top: 0
+                        left: 0
+                        font-size: 22px
+                        line-height: 24px
+                        color: #96b8bf
+        .tab-pane
+            background #fff
+            border-radius 0 0 border_radius_sm border_radius_sm
+            box-shadow: 0 2px 4px rgba(0, 64, 76, 0.15)
+            margin-bottom 3px
+            &#tab-actions
+                background-color transparent
+                box-shadow none
+        .post__more-link
+            padding-left 6%
+            padding-right 6%
+//Right
+    aside
+        margin-bottom 20px
+        .widget h3
+            font-size 18px
+            font-weight 700
+        &.themes
+            padding: 43px 0 0
+            h3
+                // margin-top 43px
+                padding: 0 0 12px
+                margin: 0 
+        .widget
+            .banner img
+                width 100%
+            &-action
+                h3
+                    margin-top 0
+                    margin-bottom 20px
+                .post
+                    &:last-child
+                        margin-bottom 0
+            .link
+                text-align center
+                font-size 16px
+                margin-top 20px
+                &-more
+                    margin: 0
+                    line-height: 1
+                    padding: 10px 0 16px 
+                    a
+                        color: #4b89d3
+                        display: inline-block
+            .post
+                padding-bottom: 21px
+                &__body, &__footer, .timer-badge
+                    padding: 0 21px 
+    .widget + .widget
+        margin-top 23px
+    .widget-doctor, .widget-clinic, .widget-articles, .widget-diseases, .widget-similar-diseases, .widget-online-diagnostic
+        background: #fff
+        border-radius: 3px
+        box-shadow: 0 2px 4px rgba(0, 64, 76, 0.15)
+        h3
+            margin: 0
+            text-align: center
+            padding: 13px 0
+            line-height: 1 
+// Index
+.offers-list
+    .post
+        margin-bottom 10px
+    >.row>div
+        @media tablet
+            &:nth-child(3)
+                display none
+        @media screen560
+            width 100%
+.offers-container
+    >div
+        @media screen560
+            width 100%
+#tab-actions
+    .text
+        padding-top 8px
+    .header-styled
+        margin-top 8px
+        margin-bottom 15px
+    .offers-list
+        margin-top 20px
+        >.row>div
+            @media tablet
+                &:nth-child(3)
+                    display block
+        .post__desc
+            font-size 14px
+    .header-styled + .offers-list
+        margin-top 0
+
+
+.highlight
+    position relative
+    margin-bottom 20px
+    margin-right 5px
+    padding 16px 30px 4px
+    overflow hidden
+    border-radius 3px
+    background-color green_light
+    @media phone
+        padding 14px 20px 2px
+        font-size 16px
+
+.header-styled
+    margin-top 28px
+    margin-bottom 19px
+    .h1
+        margin 0
+        color: #00829b
+        font-size 24px
+        font-weight 700
+    @media phone
+        .h1
+            font-size 18px
+        .text-right a
+            font-size 13px
+
+.main-more-link
+    display inline-block
+    margin-top 2px
+    color blue_base
+    font-size 16px
+    text-decoration underline
+
+    &:hover
+        text-decoration none
+
+a:focus, a:hover
+    color #1997AF
+
+.margin-bottom-0
+    margin-bottom 0 !important
+.margin-top-20
+    margin-top 20px !important
+.alignright
+    float right
+    margin 5px 0 30px 30px
+.alignleft
+    float left
+    margin 5px 30px 30px 0
+@media phone
+    .alignleft
+    .alignright
+        float none
+        margin-left auto
+        margin-right auto
+.offset-top-100
+    margin-top -100px !important
+
+
+// datepicker
+.picker
+    @media phone
+        width auto
+    &__holder
+        min-width 250px
+        overflow-y none
+    &--time
+        min-width 0
+        .picker-holder
+            overflow-y auto
+    &__list
+        padding 0
+    &__input
+        &.picker__input--active
+            border-color #ccc
+    &--opened
+    .picker__holder
+        box-shadow none
+        border-color #ccc
+        top -1px
+    &__day
+        padding 0.17em 0
+    &__year
+        font-style normal
+        color #000
+    &__button--close
+        display none
+    &__day--today:before
+        top 1px
+        right 1px
+    &__list-item
+        padding 6px 7px
+        transition all .2s ease-in-out
+        &:hover
+            background #d7f2ef
+            border-color #5dccbe
+.picker__nav--prev, .picker__nav--next
+    box-sizing content-box
+    -moz-box-sizing content-box
+    &:hover
+        background transparent
+.picker--focused
+    .picker__list-item--highlighted, .picker__day--highlighted
+        background #00829b !important
+.picker__list-item--selected, .picker__day--selected
+    border-color #00829b
+.picker__day--today, .picker__button--today
+    &:before
+        border-top-color #00829b
+    &:hover
+        background #d7f2ef
+.picker__day--today
+    color #00829b
+.picker__day--infocus, .picker__day--outfocus
+    &:hover
+        background #d7f2ef
+
+// select2
+.select2
+.select2-drop
+.select2-drop-mask
+    font-size 14px
+    color #555
+
+.select2-container-active, .select2-container-multi.select2-container-active
+    .select2-choice, .select2-choices
+        box-shadow none
+        border-color #5dccbe !important
+        transition border-color .2s ease-in-out
+.select2-container
+    width 100%
+    .select2-choice
+        height 32px
+        line-height 30px
+        border-radius 3px
+        border-color #ccc
+        background #fff
+        .select2-arrow
+            background #fff
+            border-left 0 none
+            b
+                position relative
+                top 2px
+                background none
+                border-color #7f7f7f transparent transparent
+                border-style solid
+                border-width 4px
+                display inline-block
+                vertical-align middle
+                width 0
+                height 0
+                transition border-color .2s ease-in-out
+        @media phone
+            > .select2-chosen
+                max-width 240px
+    &.select2-dropdown-open
+        .select2-choice
+            .select2-arrow
+                b
+                    border-color transparent #7fc0cd transparent transparent
+.select2-dropdown-open.select2-drop-above .select2-choice,
+.select2-dropdown-open.select2-drop-above .select2-choices
+    background #fff
+
+.select2-with-searchbox
+    .select2-search
+        display none
+    &.show-search
+        .select2-search
+            display block
+        .select2-input
+            border 1px solid #D1E8D7
+            background none
+            margin 5px 0
+            font-size 13px
+            padding 5px 5px 4px
+.select2-drop
+    box-shadow none
+.select2-default
+    color #c8c8c8 !important
+    font-size 13px !important
+
+.select2-container-multi
+    .select2-choices
+        padding-top 1px
+        border-color #ccc
+        min-height 30px !important
+        background #fff
+        border-radius border_radius_sm
+        .select2-search-field
+            &:first-child
+                input.select2-default
+                    border-radius 100px !important
+                    border 1px dashed #b5b5b5 !important
+            input
+                margin 0
+                &.select2-default
+                    margin-left 10px
+                    margin-top 3px
+                    padding 1px 10px 2px!important
+                    line-height 14px
+                    width auto !important
+        .select2-search-choice
+            background #00829b
+            border-radius 15px
+            border 0 none
+            color #fff
+            font-weight bold
+            box-shadow none
+            padding 6px 27px 3px 10px
+            max-width 99%
+            .select2-search-choice-close
+                sprite($close_white_16)
+                opacity .3
+                right 5px
+                left auto
+                top 50%
+                margin-top -7px
+                transition opacity .2s ease-in-out
+                &:hover
+                    background-position 0 0
+                    opacity .75
+.select2-drop-active
+    border-color #5dccbe
+.select2-results
+    padding 0
+    margin 0
+    .select2-highlighted
+        background #d7f2ef
+        color #000
+    .select2-result
+        transition background .2s ease-in-out
+    .select2-no-results
+        display none
+    .select2-result-label
+        padding 6px 7px 7px
+
+.select2-collapse
+    .select2-results .select2-result-label
+        padding 0 10px
+    .select2-collapsed
+        > .select2-result-label
+            .price-item__description:after
+                content "\00a0↓"
+                font-style normal
+                color #999
+                font-weight normal
+        .select2-result-sub
+            display none
+        &.select2-collapse-open
+            > .select2-result-label
+                .price-item__description:after
+                    content "\00a0↑"
+            .select2-result-sub
+                display block
+
+.select2-drop-mask
+    z-index 100013
+.select2-drop
+    z-index 100014
+
+.select2-container .select2-choice>.select2-chosen
+    border-right 1px solid #ccc
+    margin-right 24px
+.select2-container .select2-choice .select2-arrow
+    width 16px
+
+.select2-container.select2-dropdown-open .select2-choice .select2-arrow b
+    top 0
+    right 3px
+    
+//cr
+.row-articles
+    padding: 0 0 20px 
+.article-block
+    background-color: white
+    border-radius: 3px
+    box-shadow: 0 2px 4px rgba(0, 64, 76, 0.15)
+    margin-bottom: 10px
+    &__img
+        position: relative
+        width: 100%
+        height: 140px
+        overflow: hidden
+        border-radius: 3px 3px 0 0
+        margin-bottom: 12px
+        img
+            position: absolute
+            left: 50%
+            top: 0
+            width: 350px
+            height: 179px
+            margin-left: -175px
+    &__title
+        font-size: 16px
+        font-weight: 700
+        line-height: 1
+        min-height 64px
+        padding: 0 15px 16px
+        a
+            display: inline-block
+    &__info
+        padding: 0 15px 15px
+        clearfix()
+    .main-time
+        float: left
+    .info-list
+        float: right
+        @media only screen and (max-width: screenLg)
+            float: none
+            clear: both
+.info-list
+    font-size: 0
+    li
+        display: inline-block
+        vertical-align: top
+        font-size: 13px
+        line-height: 20px
+        padding: 0 0 0 14px 
+        &.first-child
+            padding: 0
+        a, span
+            color: #5e6e71
+            text-decoration: none
+            position: relative
+            display: inline-block
+            &.is-view
+                padding: 0 0 0 28px
+                &:before, &:after
+                    width: 28px
+                &:before
+                    background-image: url("i/icons/in-view.png")
+                &:after
+                    background-image: url("i/icons/in-view-active.png")
+            &.is-like
+                padding: 0 0 0 20px
+                &:before, &:after
+                    width: 20px
+                    bottom: 4px
+                &:before
+                    background-image: url("i/icons/in-like.png")
+                &:after
+                    background-image: url("i/icons/in-like-active.png")
+            &.is-share
+                padding: 0 0 0 20px
+                &:before, &:after
+                    width: 20px
+                &:before
+                    background-image: url("i/icons/in-share.png")
+                &:after
+                    background-image: url("i/icons/in-share-active.png")
+            &:before, &:after
+                content: ""
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                transition: opacity 0.2s, visibility 0.2s
+                background-repeat: no-repeat
+                background-position: center left 
+            &:after
+                visibility: hidden
+                opacity: 0
+        a
+            &:hover
+                &:before
+                    opacity: 0
+                    visibility: hidden
+                &:after
+                    opacity: 0.73
+                    visibility: visible
+.main-time
+    font-size: 13px
+    color: #96b8bf
+    line-height: 20px
+    display: block
+
+.blog-list
+    &__item
+        border-bottom: 1px solid rgba(#00829b, 0.15)
+        padding: 0 0 15px 
+        margin-bottom: 10px
+        &.last-child
+            padding: 0
+            margin: 0
+            border: none
+    .main-time
+        margin-bottom: 2px
+    &__link
+        font-size: 16px
+        line-height: 19px
+        text-decoration: underline
+        font-weight: 700 
+        display: inline-block
+
+.container_find
+    .header-styled
+        margin-top: 0
+        padding-top: 0
+.find
+    background-color: white
+    border-radius: 3px
+    box-shadow: 0 2px 4px rgba(0, 64, 76, 0.15)
+    clearfix() 
+    padding: 31px 0 20px
+    margin-bottom: 37px
+    &-item
+        text-align: center
+        width: 20%
+        padding: 20px 10px 
+        float: left 
+        &__block
+            display: inline-block
+            max-width: 140px
+            text-decoration: none
+            transition: opacity 0.2s
+            will-change: opacity
+            &:hover
+                opacity: 0.8
+        &__title
+            display: block
+            font-size: 18px
+            font-weight: 700
+            color: #5e6e71
+            line-height: 1
+        &__icon
+            display: block
+            width: 70px
+            height: 58px
+            background-repeat: no-repeat
+            background-position: center center
+            margin: 0 auto 16px 
+            &.is-doc
+                background-image: url("i/icons/in-doc.png") 
+            &.is-clinic
+                background-image: url("i/icons/in-clinic.png") 
+            &.is-centers
+                background-image: url("i/icons/in-centers.png") 
+            &.is-diseases
+                background-image: url("i/icons/in-diseases.png") 
+            &.is-promotions
+                background-image: url("i/icons/in-promotions.png") 
+
+.b-box
+    background-color: #e5f2f5
+    border-radius: 5px
+    padding: 48px 36px
+    position: relative
+    margin: 0 78px 0 0 
+    @media phone_tablet
+        margin: 0
+        padding: 25px 20px 
+    p
+        font-size: 16px
+        line-height: 1.2
+        margin: 0
+        padding: 5px 0 6px 
+        strong
+            font-weight: 700
+        .ocean-blue
+            color: #4b89d3
+    &__doc
+        position: absolute
+        right: -78px
+        top: -65px
+        @media phone_tablet
+            display: none
+article.static-page
+    .about
+        &-text
+            h2, .h2
+                margin-bottom: 23px
+            .feedback
+                &__link
+                    margin-right: 15px
+        &-content
+            img
+                max-width: 100%
+    .header-styled
+        &.header-styled-mod
+            padding-bottom: 14px
+.header-styled
+    &.header-styled-mod
+        .h1
+            color: #5e6e71
+.about
+    &-row
+        margin-bottom: 25px
+        &-mod
+            margin-bottom: 0
+            margin-top: 0
+            padding: 25px 0 10px
+    &-content
+        img
+            max-width: 100%
+    &-list
+        padding-top: 45px
+        padding-bottom: 20px
+        @media phone
+            padding-top: 0
+        h2
+            font-weight: 700
+        p
+            font-size: 15px
+            line-height: 20px
+            color: #5e6e71
+            margin: 0
+            max-width: 440px
+    &-disc
+        font-size: 15px
+        line-height: 20px
+        color: #5e6e71
+        li
+            position: relative
+            padding: 7px 0 8px 18px 
+            &:before
+                content: "" 
+                position: absolute
+                top: 14px
+                left: 0
+                width: 8px
+                height: 8px
+                background-color: #96b8bf
+                border-radius: 50%
+    &-text
+        padding-top: 40px 
+        padding-bottom: 20px
+        @media phone
+            padding-top: 0
+        .feedback
+            &__link
+                color: #96b8bf
+                &:hover
+                    color: #96b8bf
+        .phones
+            .select7__current-value
+                color: #96b8bf
+            .select7__caret
+                border-color: #96b8bf transparent transparent
+    &-highlight
+        font-size: 15px
+        color: #5e6e71
+        line-height: 1.5
+        background-color: #e5f2f5
+        border-radius: 5px
+        padding: 36px 35px 
+        position: relative
+        margin: 0 0 13px 
+        @media phone_tablet
+            padding: 20px 20px 
+        &.is-mid
+            margin-right: 40px 
+            @media phone_tablet
+                margin-right: 0
+        &.is-top
+            &:before
+                top: 16px
+                left: 100%
+                border-width: 15px 12px 0 0
+                border-color: #e5f2f5 transparent transparent
+        &.is-bottom
+            &:before
+                bottom: 16px
+                right: 100%
+                border-width: 0px 0px 15px 12px
+                border-color: transparent transparent #e5f2f5
+        &:before
+            content: "" 
+            position: absolute
+            width: 0
+            height: 0
+            border-style: solid
+            @media phone_tablet
+                display: none
+        p
+            margin: 0
+            padding: 0
+    &-img-phone
+        border-bottom: 1px solid #f5fafb
+        text-align: center 
+
+.rating
+    &-top
+        p
+            font-size: 16px
+            max-width: 385px
+            margin-bottom: 30px
+            @media phone_tablet
+                max-width: 100%
+            @media phone
+                margin-bottom: 10px
+
+.article-top
+    font-size: 0
+    padding: 0 38px 0
+    @media phone
+        padding: 0 15px 0 
+    &__item
+        display: inline-block
+        vertical-align: top
+        font-size: 15px
+        color: #5e6e71
+        line-height: 20px
+        padding: 0 30px 0 0
+        position: relative
+        margin-bottom: 5px
+        @media phone_tablet
+            padding: 0 15px 0 0 
+        @media phone
+            display: block
+            padding: 0
+        &.last-child
+            padding: 0
+            &:before
+                display: none
+        &:before
+            content: "" 
+            position: absolute
+            bottom: 5px
+            right: 15px
+            width: 1px
+            height: 11px
+            opacity: 0.28
+            background-color: #00829b
+            @media phone_tablet
+                display: none
+        span
+            color: #96b8bf
+        a
+            color: #4b89d3
+            text-decoration: underline
+            &:hover
+                text-decoration: none
+        .info-list
+            li
+                font-size: 15px
+                padding: 0 0 0 10px 
+                &.first-child
+                    padding: 0
+
+.blockquote
+    padding: 0 0 0 50px
+    position: relative
+    font-style: italic
+    @media phone
+        padding: 0 0 0 20px 
+    &:before
+        content: "“"
+        color: #a3c1c7
+        font-size: 120px
+        line-height: 0.8
+        position: absolute
+        top: 0
+        left: -12px        
+        @media phone
+            font-size: 70px
+    div
+        background-color: #e5f2f5
+        border-left: 1px solid #c0d7dc
+        padding: 29px
+        font-size: 15px
+        line-height: 24px 
+        @media phone
+            padding: 10px 
+
+.article-content
+    padding: 38px 0 0
+    background: #fff 
+    box-shadow: 0 2px 4px rgba(0, 64, 76, 0.15)
+    @media phone
+        padding: 15px 0 0 
+
+.content-block__indent
+    padding: 0 38px 
+    @media phone
+        padding: 0 15px
+    
+.content-block
+    padding: 0 38px 
+    @media phone
+        padding: 0 15px 
+    .blockquote
+        margin-bottom: 23px
+    p, ul
+        font-size: 16px
+        line-height: 26px
+        margin-bottom: 10px
+        small
+            font-size: 15px
+    li
+        padding: 0 0 10px 18px
+        position: relative
+        // &:before
+        //     content: "" 
+        //     position: absolute
+        //     top: 11px
+        //     left: 0
+        //     width: 8px
+        //     height: 8px
+        //     background-color: #96b8bf
+        //     border-radius: 50%
+    h2
+        font-weight: 700
+        font-size: 20px
+        line-height: 26px
+        margin: 0
+.content-img
+    padding: 18px 0 26px
+    img
+        width: 100%
+.content-info
+    padding-bottom: 20px
+
+.content-share
+    clearfix()
+    text-align: center
+    position: relative
+    background-color: #e5f2f5
+    &:before
+        content: "" 
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 140px
+        width: 1px
+        opacity: 0.52
+        background-color: #96b8bf
+        display: block
+        @media phone
+            display: none
+    .share-counter
+        width: 140px
+        float: left
+        color: #a3c1c7
+        padding: 30px 0 
+        @media phone
+            float: none
+            width: 100%
+        span, small
+            display: block
+            line-height: 1
+        span
+            font-size: 55px
+        small
+            font-size: 18px
+    .share-btns
+        overflow: hidden
+        padding: 42px 0 40px 
+        font-size: 0
+        @media phone
+            overflow: visible
+            padding: 0 0 20px 
+            width: 300px
+            margin: 0 auto 
+        &__item
+            float: none
+            display: inline-block
+            vertical-align: top
+            padding: 5px 
+        &__btn
+            width: 131px
+            height: 41px
+            display: inline-block
+            vertical-align: top
+            background-repeat: no-repeat
+            background-position: center 
+            &.is-fb
+                background-image: url("i/icons/share-fb.png")
+            &.is-twitter
+                background-image: url("i/icons/share-twitter.png")
+            &.is-vk
+                background-image: url("i/icons/share-vk.png")
+            &.is-gp
+                background-image: url("i/icons/share-gp.png") 
+
+.comment-tabs
+    margin-bottom: 38px
+    &__list
+        padding: 0 17px
+        font-size: 0
+        li
+            display: inline-block
+            vertical-align: top
+        a
+            padding: 13px 19px
+            font-size: 16px
+            line-height: 1
+            color: #4b89d3
+            display: inline-block
+            text-decoration: none
+            position: relative
+            &:hover
+                text-decoration: underline
+            &.active
+                color: #5e6e71
+                font-weight: 700 
+                &:hover
+                    text-decoration: none
+                &:before, &:after
+                    display: block
+                    @media phone
+                        display: none
+            &:before, &:after
+                content: "" 
+                position: absolute
+                top: 100%
+                border-style: solid 
+                left: 50%
+                display: none
+            &:before
+                border-width: 0 6px 6px
+                border-color: transparent transparent #c0d2d6
+                margin: -5px 0 0 -6px
+            &:after
+                border-width: 0 5px 5px
+                border-color: transparent transparent #fff
+                margin: -4px 0 0 -5px
+    &__block
+        border-top: 1px solid #c0d2d6
+        background-color: white
+        border-radius: 0 0 3px 3px
+        box-shadow: 0 2px 4px rgba(0, 64, 76, 0.15)
+        padding: 0 38px 40px
+        display: none
+        @media phone
+            padding: 0 15px 20px 
+        &.active
+            display: block
+
+.comment-links
+    font-size: 0
+    float: left
+    @media screen560
+        float: none
+    li
+        display: inline-block
+        vertical-align: top
+        padding: 0 22px 0 0 
+    a
+        color: #96b8bf
+        font-size: 15px
+        font-weight: 700
+        text-decoration: none
+        padding: 0 0 0 22px 
+        display: inline-block
+        vertical-align: top
+        position: relative
+        &:hover
+            color: #45a4b6
+            &:before
+                visibility: hidden
+                opacity: 0
+            &:after
+                visibility: visible
+                opacity: 0.73
+        &.is-recommend
+            &:before
+                background-image: url("i/icons/in-heart.png")
+            &:after
+                background-image: url("i/icons/in-heart-active.png")
+        &.is-share
+            &:before
+                background-image: url("i/icons/in-share2.png")
+            &:after
+                background-image: url("i/icons/in-share2-active.png")
+        &:before, &:after
+            content: "" 
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            background-position: center left
+            background-repeat: no-repeat 
+            width: 22px
+            transition: opacity 0.2s, visibility 0.2s
+            will-change: opacity
+        &:after
+            visibility: hidden
+            opacity: 0
+
+.comments
+    &__area
+        position: relative
+        padding: 0 0 28px 62px 
+    &__img
+        position: absolute
+        top: 0
+        left: 0
+        width: 47px
+        height: 46px
+        background: url("i/icons/com-user.png") no-repeat center center grey_base
+        border-radius: 3px
+        img
+            width: 100%
+            height: 100% 
+    &__input
+        background-color: grey_base
+        border-radius: 3px
+        color: #7a878a
+        font-size: 18px
+        height: 46px
+        padding: 0 47px
+        border: none
+        box-shadow: none
+        outline: none
+        width: 100%
+        @media phone
+            padding: 0 20px
+        &::placeholder
+            color: #7a878a 
+    &__bottom
+        text-align: center
+    &__btn
+        font-size: 16px
+        line-height: 20px
+        border: none
+        background: none
+        outline: none
+
+.comment-top
+    clearfix()
+    padding: 18px 0 30px 
+
+.comment-filter
+    float: right
+    @media screen560
+        float: none
+        padding: 15px 0 0 
+    &__select
+        font-size: 15px
+        font-weight: 700
+        color: #96b8bf
+        .select7__caret
+            border-color: #a7babe transparent transparent
+            border-width: 6px 5px 0
+            margin-top: 2px
+        &.select7_open
+            .select7__caret
+                margin-top: -2px
+                border-color: transparent transparent #a7babe
+                border-width: 0px 5px 6px
+
+//doctor
+.catalog-quote
+    color: #5e6e71
+    font-size: 14px
+    line-height: 19px
+    padding: 15px 20px
+    background-color: #ccefea
+    border-radius: 3px
+    margin-bottom: 12px
+    margin-top: 6px
+    position: relative
+    &:before
+        content: "" 
+        position: absolute
+        top: -6px
+        right: 44px
+        border-style: solid
+        border-color: transparent transparent #ccefea
+        border-width: 0 8px 8px 
+.btn
+    border-radius: 3px
+    &-med
+        font-size: 18px
+        font-weight: 700
+        padding: 9px 23px
+.address-info
+    &_mod
+        .card__location, .card__address
+            margin-bottom: 11px
+        .card__location_metro
+            float: none
+            clear: both 
+        .card__address
+            span
+                border-bottom: 1px dotted #5e6e71 
+
+.themes-blocks
+    .article-block
+        .info-list
+            li
+                a
+                    &:hover
+                        &:before
+                            opacity: 1
+                            visibility: visible
+                    &:after
+                        display: none
+
+.tab-pane
+    .post
+        padding-bottom: 21px
+        margin-bottom: 24px
+        &__body, &__footer
+            padding: 0 21px 
+        .timer-badge 
+            padding-left: 21px
+
+.clinic-tab
+    .rating-block
+        padding-right: 50px
+        @media screen560
+            padding-right: 10px
+            padding-left: 10px
+        .rating-list
+            padding-left: 50px
+            @media phone
+                padding-left: 0
+    .likebox
+        margin-left: 50px
+        @media phone
+            margin-left: 0
+
+.container-fluid_main
+    background: grey_texture
+    position: relative
+    // z-index: 4 
+    
+//cabinet
+    .container__mod
+        margin-top 20px 
+
+.control-main
+    text-align: right
+    font-size: 0
+    margin: 0 !important
+    @media phone_tablet
+        text-align: left
+    .control-label, .control-select
+        display: inline-block
+        vertical-align: top
+        @media screen560
+            width: 100%
+            display: block
+            
+    .control-label
+        padding-right: 10px
+        padding-top: 5px !important 
+        
+
+//PROMO
+.promo-container
+    .item-promo
+        position relative
+        border: 1px solid green_base !important
+        border-radius 0 3px 3px 3px 
+        
+        &__block
+            position absolute
+            top -20px
+            left -1px
+            &:hover .item-promo__hidden
+               display block 
+        
+        &__title
+            background-color green_base
+            text-decoration none
+            color white
+            font-size 11px
+            padding 1px 15px
+            border-radius  2px 2px 0 0 
+            cursor pointer 
+            transition all .5s 
+             
+        &__hidden
+            display none
+            position absolute
+            top 100%
+            left 0
+            white-space nowrap
+            background-color green_base
+            color white
+            font-size 12px
+            -webkit-border-radius 3px 
+            border-radius 3px 
+            padding 5px 10px 
+            margin 10px 0 0 10px
+            z-index 5
+            @media screen560
+                white-space normal
+                width 250px
+            &:before
+                content ''
+                position absolute
+                top -12px
+                display inline-block
+                width 0
+                height 0
+                border 8px solid transparent
+                border-bottom 6px solid green_base 
+    .promo-block__link
+        border: 1px solid green_base !important
+        
+.list-view
+    margin 20px auto
+            
+                   
+////NAV-TABS TRIANGLE////
+.nav-tabs
+    .triangle-yellow
+        &.active
+            &:after
+                border-color transparent transparent #fff9e9 !important
+    .triangle-white
+        &.active
+            &:after
+                border-color transparent transparent #fff !important
+    .triangle-transparent
+        &.active
+            &:after
+                border-color transparent transparent transparent !important
+                
+
+
+////TRIANGLE-TOOLTIP////
+.triangle-tooltip
+    padding 7px 0 0 24px
+    position relative
+    .tooltip-span
+        display inline-block
+        vertical-align middle
+        // margin-left 10px 
+        border 4px solid transparent
+        border-top 4px solid #96b8bf
+        &:after
+            content ""
+            position absolute
+            top 0
+            right 0
+            bottom 0
+            left 0
+
+.promo-banners
+    @media phone
+        width 100% 
+        padding 0 
+        .promo-banner
+            margin 20px 0
+            @media phone
+                .col-sm-6
+                    padding 0 

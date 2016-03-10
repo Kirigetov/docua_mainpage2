@@ -1,0 +1,78 @@
+.partners
+    margin-top 15px
+    &__fieldset
+        border 1px solid #fff
+        padding 10px 0 0 14px
+        max-width 190px
+        @media phone_tablet
+            max-width 100px
+            padding 10px 0 0 8px
+    &__title
+        font-size 10px
+        color #fff
+        padding 0 2px
+    &__item
+        display inline-block
+        margin-right 4px
+        margin-bottom 10px
+    &__item > img
+        border 0 none
+        
+.partners-main 
+    .header-styled    
+        &.header-partners
+            margin-bottom 40px 
+            padding-bottom 10px 
+            @media phone
+                margin-bottom 25px 
+  
+.partner-registration
+    &__title
+        color text_color
+        font-style italic
+        display inline-block 
+        font-size 22px
+        font-weight bold
+        max-width 290px
+        vertical-align middle
+        @media tablet
+            max-width 230px
+            text-align center
+        @media phone 
+            display block
+            text-align center 
+            max-width 100%
+            font-size 20px
+            margin -10px 0 20px 0
+    &__image 
+        margin 0 20px 0 20px
+        display inline-block
+        img
+            max-height 130px 
+            height 100%      
+        @media tablet
+            margin 0
+        @media phone_tablet
+            margin 0
+        @media phone 
+            display none
+                
+.partner-how-it-work
+    .how-its-made
+        &__item
+            padding 0 45px 
+            @media phone
+                padding 0 10px 
+        &__item.even
+            &:before, &:after
+                content ""
+                position absolute
+                sprite($how_to_made)
+                @media phone
+                    display none 
+            &:before    
+                top 20px
+                left -20px 
+            &:after
+                top 20px
+                right -30px  

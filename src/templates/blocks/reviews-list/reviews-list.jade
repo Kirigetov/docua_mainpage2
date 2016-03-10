@@ -1,0 +1,60 @@
+- items = data.items
+each item in items
+    +e("li").item.hreview
+        if item.about
+            +e.review-about.item
+                span.grey Отзыв о&nbsp;
+                a.fn(href="/", title=item.about)= item.about
+        if !diagnosticCenter
+            +b("ul").rating-list.hidden-xs
+                each rating in item.ratings
+                    +b.rating.hide_value: +i({ label: rating.label, value: rating.value, tooltip: rating.tooltip })
+        +e.content
+            .description
+                +e.item-header
+                    if diagnosticCenter
+                        +e("span").name.reviewer= item.name
+                        | , узи брюшной полости,&nbsp;
+                        +e("span").date.dtreviewed #{item.date}
+                            span.value-title.hidden(title=item.date)
+                    else
+                        +e("span").name.reviewer= item.name
+                        +e("span").date.dtreviewed #{item.date}
+                            span.value-title.hidden(title=item.date)
+                +b("ul").rating-list.visible-xs
+                    each rating in item.ratings
+                        +b.rating.hide_value: +i({ label: rating.label, value: rating.value, tooltip: rating.tooltip })
+                +e.liked Рекомендует врача
+                +e.unliked Не рекомендует врача
+                p= item.summary
+
+        if item.feedback
+            .feedback-reviews
+                h3.h3=item.feedback.title
+                .feedback-date-time_wrap
+                    span.feedback-date= item.feedback.date  
+                    span &nbsp;в&nbsp;
+                    span.feedback-time= item.feedback.time
+                p=item.feedback.content 
+
+                
+        if item.afterTreatment
+            +b.results-of-treatment 
+                +b("ul").rating-list.hidden-xs
+                    each rating in item.afterTreatment.ratings
+                        +b.rating.hide_value: +i({ label: rating.label, value: rating.value, tooltip: rating.tooltip })
+                +e.content  
+                    .description
+                        +e.item-header 
+                            +e("span").title Отзыв по результатам лечения 
+                            +e("span").date.dtreviewed #{item.afterTreatment.date}
+                                span.value-title.hidden(title=item.afterTreatment.date)
+                                span &nbsp;в&nbsp;
+                                span.feedback-time= item.afterTreatment.time
+                        +b("ul").rating-list.visible-xs
+                            each rating in item.afterTreatment.ratings
+                                +b.rating.hide_value: +i({ label: rating.label, value: rating.value, tooltip: rating.tooltip })
+                        p= item.afterTreatment.summary
+
+                
+ 

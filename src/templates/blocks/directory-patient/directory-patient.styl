@@ -1,0 +1,209 @@
+.doctors-region
+    h3
+        color: #5e6e71
+        font-size: 24px
+        font-weight: 700
+        margin: 0 0 11px
+    &__list
+        clearfix()
+        padding: 6px 10px 5px
+        list-style: none
+        position: relative
+        background: #fff 
+        border-radius: 3px
+        box-shadow: 0 2px 4px rgba(0, 64, 76, 0.15)
+        zoom: 1
+        font-size: 0
+        margin-bottom: 21px
+    &__item
+        display: inline-block
+        vertical-align: top
+        width: 50%
+        padding: 0 11px 
+        @media screen560
+            width: 100%
+        &.is-last
+            .doctors-region__link
+                border: none
+                @media screen560
+                    border-bottom: 1px solid #c0d2d6
+        &.last-child
+            .doctors-region__link
+                @media screen560
+                    border: none                    
+    &__link
+        overflow hidden
+        color: #4b89d3
+        font-weight: 700
+        line-height: 34px
+        font-size: 20px
+        display: block
+        text-decoration: underline
+        border-bottom: 1px solid #c0d2d6
+        padding: 4px 0 10px 30px
+        position: relative
+        &:hover
+            .directory-patient__label
+                text-decoration none
+        &:before
+            content: "" 
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            width: 30px
+            background-position: center left
+            background-repeat: no-repeat
+        &.is-red 
+            &:before
+                background-image: url("i/icons/underground-red.png")
+        &.is-green
+            &:before
+                background-image: url("i/icons/underground-green.png")
+        &.is-blue 
+            &:before
+                background-image: url("i/icons/underground-blue.png")
+
+.doctors-alert
+    box-shadow: 0 2px 4px rgba(0, 64, 76, 0.15)
+    background: #fff
+    color: #5e6e71
+    font-size: 24px
+    line-height: 1 
+    text-align: center
+    padding: 42px 21px 
+    margin-bottom: 31px
+    border-radius: 3px
+    @media phone
+        padding: 21px
+        font-size: 18px
+    strong
+        display: block
+        max-width: 750px
+        margin: 0 auto 
+        
+.doctors-card
+    &__item
+        background-color: white
+        border-radius: 3px
+        box-shadow: 0 2px 4px rgba(0, 64, 76, 0.15)
+        padding: 21px 21px 19px 110px
+        position: relative
+        margin-bottom: 21px
+        min-height: 142px
+        border: 1px solid #f5f6f9
+        transition: border-color .2s ease,box-shadow .2s ease
+        @media screen560
+            padding-left: 21px
+        &:hover
+            box-shadow: 0 10px 15px #e3e4ed
+            border-color: green_base
+    &__img
+        width: 75px
+        height: 99px
+        overflow: hidden
+        position: absolute
+        top: 22px
+        left: 21px
+        @media screen560
+            position: relative
+            width: 120px
+            height: auto
+            top: 0
+            left: 0
+            margin: 0 15px 15px 0
+            float: left
+        @media only screen and (max-width: 450px)
+            float: none
+            margin: 0 0 15px 
+        img
+            width: 100%
+            border-radius: 2px
+    &__container
+        clearfix()
+    &__title
+        font-size: 18px
+        font-weight: 700
+        line-height: 20px
+        margin: 0
+        overflow: hidden
+        a
+            color: #4b89d3
+            text-decoration: underline
+            display: inline-block
+            &:hover
+                text-decoration: none
+    &__text
+        float: left
+        width: 65%
+        padding: 9px 0 0
+        @media phone
+            float: none
+            width: 100%
+            padding-right: 120px
+        @media screen560
+            padding-right: 0
+    &__list
+        font-size: 14px
+        margin-bottom: 11px
+    &__price
+        font-size: 16px
+    &__info
+        float: right
+        width: 35%
+        padding: 9px 0 0
+        text-align: right
+        @media phone
+            float: none
+            width: 100%
+        @media screen560
+            clear: both
+            clearfix()
+        .doctors-card__views
+            color: #4b89d3
+            font-size: 14px
+            text-decoration: underline
+            line-height: 20px
+            display: inline-block
+            vertical-align: top
+            margin-left: 12px
+            &:hover
+                text-decoration: none
+            @media phone
+                display: block
+            @media screen560
+                margin-left: 0
+        .rating
+            @media phone
+                display: block
+            &__stars
+                margin: 3px 0 0
+        .btn
+            font-weight: 700
+            border-radius: 3px
+            padding: 4px 19px 5px  
+    &__rating
+        margin-bottom: 20px
+        @media phone
+            position: absolute
+            top: 45px
+            right: 21px
+            text-align: right
+            margin: 0
+        @media screen560
+            position: static
+            float: left
+            text-align: left
+        @media only screen and (max-width: 450px)
+            position: absolute
+            text-align: right
+
+.doctors-quote
+    font-size: 16px
+    line-height: 1.2
+    background: #fff9e9
+    border-radius: 0 0 3px 3px 
+    text-align: center
+    padding: 18px 21px 17px 
+    strong
+        display: block

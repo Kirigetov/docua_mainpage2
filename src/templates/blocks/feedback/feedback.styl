@@ -1,0 +1,109 @@
+.feedback
+    float left
+    @media phone
+        clear: both
+    &__link
+        float left
+        position relative 
+        &.mobile-none
+            @media screen560
+                display: none
+        &:before
+            content ''
+            position absolute
+            left 0
+            top 4px
+        &:first-child
+            padding-left $navbar_callback_width + 5
+            &:before
+                sprite($navbar_callback)
+        &:last-child
+            padding-left $navbar_pencil_width + 5
+            &:before
+                sprite($navbar_pencil)
+        &:hover
+            color #fff
+            border none
+    &-mod
+        .feedback__link
+            &:before
+                background-repeat: no-repeat
+                background-position: center center 
+            &:first-child
+                padding-left 23px
+                &:before
+                    background-image: url("i/icons/fb-first.png") 
+                    width: 18px
+                    height: 12px
+            &:last-child
+                padding-left 20px
+                &:before
+                    background-image: url("i/icons/fb-second.png") 
+                    width: 12px
+                    height: 12px
+
+.navbar-fixed-top
+    .feedback
+        float right
+        margin-left 15px 
+        @media phone
+            float left 
+            clear none
+            margin-left 0
+            // margin-right 25px  
+        &__link_callback
+            display none
+            @media phone
+                display inline-block 
+        &__link_feedback
+            @media phone
+                display none
+        &__link
+            font-size 16px
+            text-transform uppercase
+            padding 5px 20px
+            background-color green_base 
+            color #fff 
+            border-radius 3px
+            @media phone
+                position relative
+                padding 0
+                margin-left 30px 
+                background none  
+                color blue_base
+                font-size 14px 
+                border-bottom 1px dotted
+                text-transform none
+                &:before
+                    content ""
+                    position absolute
+                    top 2px
+                    left -30px 
+                    width 19px 
+                    height 19px 
+                    background-image url(/i/icons/phone-icon-callback.png)
+                    background-repeat no-repeat
+                    background-position initial
+            &:before, &:after
+                content none
+            span
+                border-bottom none
+        
+.main-page_feedback
+    &.feedback  
+        .feedback__link
+            float none
+            display inline-block
+            vertical-align baseline
+            line-height 3 
+            padding 0 25px
+            font-size 16px
+            text-transform uppercase
+            text-decoration none
+            background-color green_base 
+            color #fff 
+            &:hover
+                background-color #06CFB6  
+                // background #06CFB6 
+            &:before, &:after
+                content none

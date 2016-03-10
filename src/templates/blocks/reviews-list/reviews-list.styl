@@ -1,0 +1,247 @@
+.reviews-list
+    margin 0  
+    padding 0
+    list-style none
+    &__item
+        position relative
+        display inline-block
+        width 100%
+        border-bottom 1px dashed #ccc
+        &:last-child
+            border-color transparent
+            &:after
+                content none
+                display none
+    &__result
+        position relative
+        margin 10px 0 5px
+        clear both
+        padding-left 10px
+        .reviews-list
+            &__name
+                color #00829b
+            &__separator
+                position absolute
+                left 0
+                top 0
+                width 3px
+                height 100%
+                background-color #00829b
+    &__date
+        position relative
+        top 3px
+        float right
+        margin-left 5px
+        font-size 13px
+        color text_blue
+        @media phone
+            position static
+            float none
+            margin-left 0
+    &__name
+        color text_blue
+        font-weight bold
+        font-size 16px
+        @media phone
+            display block
+            width 100%
+    &__item-header
+    &__review-about
+        margin-bottom 6px
+    &__review-about
+        max-width 400px
+        @media phone_tablet
+            max-width inherit
+    p
+        margin 0 0 5px
+    .rating-list
+        float right
+        width 250px
+        @media phone
+            float none
+            width 100%
+    &__content
+        overflow hidden
+        padding-right 44px
+        font-size 14px
+        @media phone
+            padding-top 15px
+            padding-right 0
+    .recommend
+        position relative
+        font-size 14px
+        margin-bottom 7px
+        @media phone
+            float none !important
+        &-icon
+            width 16px
+            height 19px
+            display inline-block
+            vertical-align middle
+            margin-right 8px
+        &-no
+            color #ff4c4c
+            .recommend-icon
+                vertical-align bottom
+                &:before
+                    content ''
+                    position absolute
+                    left 0
+                    top 6px
+                    zoom 0.7
+                    sprite($not_like)
+        &-yes
+            color green_base
+            .recommend-icon
+                margin-top -6px
+                &:before
+                    content ''
+                    position absolute
+                    left 0
+                    top 0
+                    zoom 0.7
+                    sprite($like)
+    &__liked, &__unliked, &__results-of-treatment
+        font-size: 14px
+        line-height: 18px
+        padding: 4px 0 0 24px 
+        position: relative
+        margin-bottom: 10px
+        &:before
+            content: "" 
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            width: 24px
+            background-position: center left
+            background-repeat: no-repeat
+    &__liked 
+        color: green_base
+        &:before
+            background-image: url("i/icons/review-liked.png")
+    &__unliked 
+        color: #ef3d5e
+        &:before
+            background-image: url("i/icons/review-unliked.png")
+            
+    .results-of-treatment
+        margin-top 10px 
+        &__content
+            overflow hidden
+            padding-right 44px
+            font-size 14px
+            @media phone
+                padding-top 15px
+                padding-right 0
+        &__item-header
+            margin-bottom 6px
+        &__title
+            padding: 4px 0 0 24px 
+            position: relative
+            margin-bottom: 10px
+            font-size 16px
+            font-weight bold
+            line-height: 18px
+            color text_blue
+            @media phone
+                display block
+                width 100%
+            &:before
+                content: "" 
+                position: absolute
+                top: 0
+                bottom: 0 
+                left: 0
+                width: 24px
+                background-position: center left
+                background-repeat: no-repeat 
+                background-image: url("i/icons/res-treatment.png")
+            
+        &__date 
+            position relative
+            top 3px
+            float right
+            margin-left 5px
+            font-size 13px
+            color text_blue
+            @media phone
+                position static
+                float none
+                margin-left 0
+ 
+ 
+.tab-content
+    #tab-reviews
+        .reviews-list
+            &__item
+                padding 15px 20px
+                p
+                    margin-bottom 0
+        .rating-list
+            margin-top 1px
+            .rating__label
+                color text_blue
+        .rating-block .rating-list .rating__label
+            color text_color
+    .pagination-wrap
+        border-top 1px solid #ccc
+    .reviews-denied
+        background yellow_light
+        padding 15px 30px
+        text-align center
+        font-size 16px
+
+.reviews-tabs
+    text-align center
+    li
+        display inline-block
+        float none 
+        @media phone
+            display block
+.feedback-reviews
+    position relative
+    margin 25px 0 15px 25px 
+    padding 20px 
+    background #eef7f9
+    border-radius 3px
+    clearfix()
+    @media phone
+        margin 20px 0 15px 0 
+    &:before
+        content ""
+        position absolute 
+        top -5px
+        left 30px 
+        width 10px
+        height 10px
+        background #eef7f9
+        // background red
+        transform rotate(45deg)
+    h3, p
+        margin 0
+        padding 0  
+    h3
+        float left 
+        display inline-block
+        padding-bottom 7px 
+        color #96b8bf
+        font-size 16px
+        font-weight 700
+        @media phone
+            float none 
+            display block
+    .feedback-date-time_wrap
+        float right
+        color #96b8bf 
+        font-size 13px
+        font-weight normal 
+        @media phone
+            float none 
+            display block
+            padding-bottom 7px 
+    p
+        color #5e6e71
+        font-size 14px
+        font-weight normal
+        clear both 

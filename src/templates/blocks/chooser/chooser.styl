@@ -1,0 +1,107 @@
+.container_main-chooser
+	position relative
+	min-height 320px 
+.chooser
+	position relative
+	margin-bottom 20px
+	&__inner
+		// position relative
+		position absolute
+		top -65px
+		height 280px
+		left 0
+		width 100% 
+		border-top 8px solid green_base 
+		border-radius 3px 3px 0 0
+		border-radius 0 0 border_radius_sm border_radius_sm
+		padding 35px 20px
+		background-color #fff
+		@media phone
+			top 0
+			border none
+			padding 0
+	section
+		margin-bottom 8px
+	&__title
+		margin 0
+		font-size 16px
+		line-height 20px
+	&__list 
+		height 280px
+		overflow hidden
+		margin 0
+		padding 0
+		list-style none
+		font-size 16px
+		line-height 1.25
+		font-size 0
+		clearfix()
+		@media phone
+			height 220px 
+			overflow hidden
+		&.columnized
+			height auto
+		&_offset 
+			div
+				padding 0 20px
+				&:first-child
+					padding-left 0
+		&__item
+			position relative
+			width 18%
+			display inline-block
+			vertical-align top
+			margin 0 3.5% 3px
+			padding 5px 0 5px 45px
+			@media phone
+				width 100% 
+				margin 0 
+				padding 10px 11px 10px 65px
+				border-bottom 1px solid rgba(75, 137, 211, .28)
+				&:after
+					content ""
+					position absolute
+					top 16px
+					right 20px
+					sprite($arrow_right_green)
+					
+			&-link
+				display inline-block
+				border-radius 100px
+				padding 1px 15px 2px 0
+				// margin-left -15px
+				font-size 16px
+				font-weight bold
+				color blue_base
+				&:hover
+					color blue_select 
+			&_parent
+				> .chooser__list__item-link
+					font-weight bold
+					text-transform uppercase
+					letter-spacing .5pt
+		&__quantity
+			position absolute
+			display inline-block
+			min-width 30px   
+			top 7px
+			left 0 
+			font-size 17px 
+			font-weight bold
+			color green_base 
+			text-align right
+			@media phone
+				left 20px
+				top 12px
+		&__sublist
+			margin 5px 0 15px
+			padding 0
+			list-style none
+			.chooser__list__item
+				line-height 17px
+				margin-bottom 7px
+.container_main-chooser
+	@media phone
+		width 100% 
+		padding 0
+		border-top 8px solid green_base 

@@ -1,0 +1,85 @@
+//---
+   layout: layouts/searchbar
+   activeMenuItem: 0
+   title: Медицинская библиотека
+   finder: doctors
+   modals: select-area, select-actions
+   page_name: med-library
+
+section.col-md-9
+   +b.med-library 
+      header.header-styled.header-styled_notopmargin
+         h2.h1 Медицинская библиотека
+      +e.body
+         +e.list-wrap
+            +e("ul").list.columnize(data-columns="3", data-min-column-width="10", data-adaptive-column-count="true")
+               each branch in branches
+                  +e("li").item
+                     +e("a").link(href="#" title="")= branch.title 
+                     if branch.class == 'disabled'
+                        +e("span").number-of-articles.disabled 12
+                     else
+                        +e("span").number-of-articles 10
+
+   .after-content-title  
+      p Новые статьи     
+
+   +b("ul").med-articles-list.med-library-page     
+         each article in articlesData
+            if article.datePublic
+               +b.article-list-item.new-article: +i({article: article, news: true})
+
+aside.col-md-3.hidden-sm.hidden-xs                 
+   .widget
+      +b.widget-articles 
+         h3 Заболевания  
+         +e.body
+               +e("ul").list
+                  +e("li").item.alphabet-list__sub-item
+                     +e("a").link(href="/disease.html", title="") Аллергия
+                  +e("li").item.alphabet-list__sub-item
+                     +e("a").link(href="/disease.html", title="") Ангина
+                  +e("li").item.alphabet-list__sub-item
+                     +e("a").link(href="/disease.html", title="") Ветрянка (Ветряная оспа)
+                  +e("li").item.alphabet-list__sub-item
+                     +e("a").link(href="/disease.html", title="") Вирус иммунодефицита человека, СПИД
+                  +e("li").item.alphabet-list__sub-item
+                     +e("a").link(href="/disease.html", title="") Воспаление слуховой (евстахиевой) трубы
+                  +e("li").item.alphabet-list__sub-item
+                     +e("a").link(href="/disease.html", title="") Гайморит
+                  +e("li").item.alphabet-list__sub-item
+                     +e("a").link(href="/disease.html", title="") Гастрит
+                  +e("li").item.alphabet-list__sub-item
+                     +e("a").link(href="/disease.html", title="") Геморрой
+                  +e("li").item.alphabet-list__sub-item
+                     +e("a").link(href="/disease.html", title="") Герпес
+                  +e("li").item.alphabet-list__sub-item
+                     +e("a").link(href="/disease.html", title="") Грипп
+                  +e("li").item.alphabet-list__sub-item
+                     +e("a").link(href="/disease.html", title="") Депрессия
+                  +e("li").item.alphabet-list__sub-item
+                     +e("a").link(href="/disease.html", title="") Дерматит
+                  +e("li").item.alphabet-list__sub-item
+                     +e("a").link(href="/disease.html", title="") Дистрофия ногтя
+                  +e("li").item.alphabet-list__sub-item
+                     +e("a").link(href="/disease.html", title="") Запор
+                  +e("li").item.alphabet-list__sub-item
+                     +e("a").link(href="/disease.html", title="") Молочница (Кандидоз)
+                  +e("li").item.alphabet-list__sub-item
+                     +e("a").link(href="/disease.html", title="") Насморк (ринит)
+                  +e("li").item.alphabet-list__sub-item
+                     +e("a").link(href="/disease.html", title="") Невус (родинка, родимое пятно)
+                  +e("li").item.alphabet-list__sub-item
+                     +e("a").link(href="/disease.html", title="") Панкреатит
+                  +e("li").item.alphabet-list__sub-item
+                     +e("a").link(href="/disease.html", title="") Псориаз
+                  +e("li").item.alphabet-list__sub-item
+                     +e("a").link(href="/disease.html", title="") Сахарный диабет
+            .link.link-more
+               a(href="#") Все заболевания
+ 
+   .widget.widget-online-diagnostic  
+      h3 Онлайн-диагностика
+      +b("div").online-diagnostic
+         +e("a").link(href="/diseases.html", title="")
+            +e("img").img(src="i/online-diagnostic.png", alt="")

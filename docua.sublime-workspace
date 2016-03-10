@@ -1,0 +1,799 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bo",
+				"border-color"
+			],
+			[
+				"toggle",
+				"toggleClass	.toggleClass()"
+			],
+			[
+				"remove",
+				"removeClass	.removeClass()"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"remo",
+				"removeClass	.removeClass()"
+			],
+			[
+				"togg",
+				"toggleClass	.toggleClass()"
+			],
+			[
+				"borcol",
+				"border-color"
+			],
+			[
+				"fr",
+				"fl:r	float:right"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"cont",
+				"content"
+			],
+			[
+				"fsi",
+				"font-size"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/stylus/1_doc.styl",
+			"settings":
+			{
+				"buffer_size": 43427,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/coffee/maps.coffee",
+			"settings":
+			{
+				"buffer_size": 14465,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/templates/blocks/maps/maps.styl",
+			"settings":
+			{
+				"buffer_size": 3704,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/templates/blocks/card/card.styl",
+			"settings":
+			{
+				"buffer_size": 11557,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/templates/blocks/timer-badge/timer-badge.styl",
+			"settings":
+			{
+				"buffer_size": 777,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/templates/blocks/directory-patient/directory-patient.styl",
+			"settings":
+			{
+				"buffer_size": 5418,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/templates/pages/doctor-consultation.jade",
+			"settings":
+			{
+				"buffer_size": 6297,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "sass",
+		"selected_items":
+		[
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"coffe",
+				"Set Syntax: CoffeeScript (Angular.js)"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"jquer",
+				"Snippet: jQuery(document).ready"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"sassb",
+				"SassBeautify"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"emmet",
+				"Emmet: Reflect CSS Value"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"coffee",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"instaa",
+				"Package Control: Install Package"
+			],
+			[
+				"coff",
+				"CoffeeToJs: Convert file"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"package control in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/docua/dhr",
+		"/C/docua/dhr/src",
+		"/C/docua/dhr/src/stylus",
+		"/C/docua/dhr/src/templates",
+		"/C/docua/dhr/src/templates/blocks",
+		"/C/docua/dhr/src/templates/blocks/card",
+		"/C/docua/dhr/src/templates/blocks/directory-patient",
+		"/C/docua/dhr/src/templates/blocks/maps",
+		"/C/docua/dhr/src/templates/blocks/navbar-collapse",
+		"/C/docua/dhr/src/templates/blocks/navbar-main",
+		"/C/docua/dhr/src/templates/blocks/timer-badge",
+		"/C/docua/dhr/src/templates/pages"
+	],
+	"file_history":
+	[
+		"/C/docua/dhr/src/templates/pages/about-rating.jade",
+		"/C/docua/dhr/src/templates/pages/cabinet-profile.jade",
+		"/C/docua/dhr/src/templates/pages/cabinet-profile_notes.jade",
+		"/C/docua/dhr/src/templates/pages/cabinet-profile_otzivi.jade",
+		"/C/docua/dhr/src/templates/pages/about.jade",
+		"/C/docua/dhr/src/templates/blocks/navbar-collapse/navbar-collapse.styl",
+		"/C/docua/dhr/src/templates/blocks/navbar-main/navbar-main.styl",
+		"/C/docua/dhr/src/stylus/mixins/mixins.styl",
+		"/C/docua/dhr/src/templates/blocks/card/card.styl",
+		"/C/docua/dhr/src/templates/blocks/short-list/short-list.styl",
+		"/C/docua/dhr/src/templates/pages/clinic-inner.jade",
+		"/C/docua/dhr/src/templates/pages/doctor-consultation.jade",
+		"/C/docua/dhr/src/templates/blocks/pagination/pagination.styl",
+		"/C/docua/dhr/src/templates/blocks/photo-gallery/photo-gallery.styl",
+		"/C/docua/dhr/src/templates/blocks/small-card/small-card.styl",
+		"/C/docua/dhr/src/templates/blocks/article-list-item/article-list-item.styl",
+		"/C/githup/DocUA/doc-work/src/templates/pages/clinics.jade",
+		"/C/githup/DocUA/doc-work/src/templates/pages/modals.jade",
+		"/C/githup/DocUA/doc-work/src/templates/pages/cabinet-profile.jade",
+		"/C/githup/DocUA/doc-work/src/templates/blocks/directory-patient/directory-patient.styl",
+		"/C/githup/DocUA/doc-work/src/templates/blocks/rating/rating.styl",
+		"/C/githup/DocUA/doc-work/src/templates/blocks/maps/maps.styl",
+		"/C/githup/DocUA/doc-work/src/templates/layouts/main.jade",
+		"/C/githup/DocUA/doc-work/src/templates/pages/doctors.jade",
+		"/C/githup/DocUA/doc-work/src/templates/blocks/more-toggle/more-toggle.styl",
+		"/C/githup/DocUA/doc-work/src/templates/blocks/card/card.styl",
+		"/C/githup/DocUA/doc-work/src/templates/blocks/benefits/benefits.styl",
+		"/C/githup/DocUA/doc-work/src/templates/blocks/reviews-list/reviews-list.styl",
+		"/C/githup/DocUA/doc-work/src/templates/blocks/job-schedule/job-schedule.styl",
+		"/C/githup/DocUA/doc-work/src/templates/blocks/schedule-doctor/schedule-doctor.styl",
+		"/C/githup/DocUA/doc-work/src/templates/blocks/card/card.jade",
+		"/C/githup/DocUA/doc-work/src/templates/blocks/reviews-list/reviews-list.jade",
+		"/C/githup/DocUA/doc-work/src/templates/pages/doctor-consultation.jade",
+		"/C/githup/DocUA/doc-work/src/coffee/maps.coffee",
+		"/C/githup/DocUA/doc-work/src/templates/blocks/doctors-index/doctors-index.jade",
+		"/C/githup/DocUA/doc-work/src/templates/pages/about-rating.jade",
+		"/C/githup/udd/src/partials/footer-banner.html",
+		"/C/githup/udd/src/category-inter-decor.html",
+		"/C/githup/udd/src/homepage3.html",
+		"/C/githup/udd/src/js/common.js",
+		"/C/githup/udd/src/sass/_header.sass",
+		"/C/githup/udd/src/sass/_popups.sass",
+		"/C/githup/udd/src/sass/_main.sass",
+		"/C/githup/udd/src/services.html",
+		"/C/githup/udd/src/sass/_footer-banner.sass",
+		"/C/githup/udd/src/sass/_common.sass",
+		"/C/githup/udd/src/partials/footer-banner-small.html",
+		"/C/githup/udd/src/subcategory.html",
+		"/C/githup/udd/src/index.html",
+		"/C/githup/orel/src/js/common.js",
+		"/C/githup/udd/src/img/svg-copy/menucheck.svg",
+		"/C/githup/udd/src/img/svg-copy/check.svg",
+		"/C/githup/udd/src/partials/headtag.html",
+		"/C/Users/Valentin/Downloads/jquery-ui-1.11.4.custom (1)/jquery-ui-1.11.4.custom/index.html",
+		"/C/githup/udd/src/js/app.js",
+		"/C/githup/udd/src/download3d-layout.html",
+		"/C/githup/udd/src/contact.html",
+		"/C/githup/udd/src/partials/footer.html",
+		"/C/githup/udd/src/product_list.html",
+		"/C/githup/udd/src/sass/style.sass",
+		"/C/githup/udd/src/img/svg-copy/close.svg",
+		"/C/githup/udd/src/partials/header.html",
+		"/C/githup/udd/src/gui_udd.html",
+		"/C/githup/udd/src/sass/lib/_svgfont.sass",
+		"/C/githup/udd/src/sass/lib/_mixins.sass",
+		"/C/githup/udd/gulp/tasks/sass.js",
+		"/C/githup/udd/gulp/tasks/html.js",
+		"/C/githup/udd/gulp/tasks/iconfont.js",
+		"/C/githup/orel/gulpfile.js",
+		"/C/githup/udd/gulp/tasks/watch.js",
+		"/C/githup/udd/gulp/tasks/copy.js",
+		"/C/githup/udd/src/sass/lib/_reset.sass",
+		"/C/githup/skyheart/page-ads-update-company.html",
+		"/C/githup/skyheart/sass/_common.sass",
+		"/C/githup/skyheart/page-company.html",
+		"/C/githup/skyheart/sass/inner.sass",
+		"/C/Users/Valentin/Downloads/illustrator/Adobe Illustrator CC 2015 19.0.0 (64-Bit) + Crack/ReadMe.txt",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/githup/gulp/src/jade/index.jade",
+		"/C/githup/gulp/src/sass/_main.sass",
+		"/C/whats0n/Accounts.txt",
+		"/C/githup/gulp/src/jade/_layout.jade",
+		"/C/githup/gulp/site/css/screen.css",
+		"/C/githup/gulp/src/index.html",
+		"/C/githup/gulp/src/partials/partial.html",
+		"/C/githup/skyheart/img/svg/no-photo.svg",
+		"/C/githup/skyheart/ads_main.html",
+		"/C/githup/skyheart/search.html",
+		"/C/githup/skyheart/vacancy.html",
+		"/C/githup/skyheart/resume.html",
+		"/C/githup/skyheart/profile_settings-mod.html",
+		"/C/githup/skyheart/page-ads-update.html",
+		"/C/githup/skyheart/my-favorites.html",
+		"/C/githup/skyheart/my-company.html",
+		"/C/githup/skyheart/my-company-empty.html",
+		"/C/githup/skyheart/messages_2.html",
+		"/C/githup/skyheart/my-ads-cabinet.html",
+		"/C/githup/skyheart/messages_1.html",
+		"/C/githup/skyheart/index.html",
+		"/C/githup/skyheart/creating-resume.html",
+		"/C/githup/skyheart/login.html",
+		"/C/githup/palmyre/src/js/common.js",
+		"/C/githup/palmyre/src/blog-inner.html",
+		"/C/githup/palmyre/src/sass/_common.sass",
+		"/C/githup/palmyre/src/blog.html",
+		"/C/githup/palmyre/src/palmyre6-categories.html",
+		"/C/githup/palmyre/src/img/tw-white.svg",
+		"/C/githup/palmyre/src/img/gp-white.svg",
+		"/C/githup/palmyre/src/img/fb-white.svg",
+		"/C/Users/Valentin/AppData/Local/Temp/Rar$DIa0.494/Внимание!.txt",
+		"/C/githup/palmyre/src/sass/_main.sass",
+		"/C/githup/palmyre/src/partials/footer.html",
+		"/C/githup/palmyre/src/sass/lib/_svgfont.sass",
+		"/C/githup/palmyre/src/index.html",
+		"/C/githup/palmyre/src/palmyre4-subpage.html",
+		"/C/githup/palmyre/src/palmyre7-wishlist.html",
+		"/C/githup/palmyre/src/img/svg-copy/tw.svg",
+		"/C/githup/palmyre/src/partials/header.html",
+		"/C/githup/docwidgets/src/sass/_main.sass",
+		"/C/githup/docwidgets/src/jade/index.jade",
+		"/C/githup/docwidgets/src/jade/search.jade",
+		"/C/githup/docwidgets/src/jade/doctors.jade",
+		"/C/githup/palmyre/src/sass/lib/_slick.sass",
+		"/C/githup/palmyre/src/sass/_about.sass",
+		"/C/githup/palmyre/src/palmyre8-about.html",
+		"/C/githup/palmyre/src/product-single.html",
+		"/C/githup/palmyre/src/partials/subscribe.html",
+		"/C/githup/palmyre/src/sass/style.sass"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tpl",
+			".nav",
+			".rating",
+			"test",
+			"content",
+			"#tab-news",
+			".article-li",
+			"small",
+			"underline",
+			"more",
+			"important",
+			"footer",
+			"Height",
+			"height",
+			"doctors",
+			"do",
+			"doctors",
+			"widget",
+			"55",
+			"widget",
+			"catalog",
+			"widget",
+			"desc",
+			"<div class=\"item\">",
+			"<div class=\"item__img\">",
+			"class=\"item__img",
+			"gall",
+			"sub",
+			"slider",
+			"services__img-inner",
+			" js-popup-btn",
+			".box",
+			"0",
+			"    ",
+			"Декора",
+			".cate",
+			".btn",
+			"    ",
+			"0",
+			"icon-menu",
+			"slider",
+			".creatin",
+			".form",
+			".p-ads",
+			".my-comp",
+			".res",
+			".n-item",
+			".n-",
+			".n-item",
+			".prof",
+			".profile",
+			".item",
+			"class=\"item-button\"",
+			"compac",
+			"doc-teaser__tags",
+			"compact",
+			".doc-compact__text",
+			"| стоимость приема от",
+			"error",
+			"error_lines",
+			"nav-",
+			"<div class=\"items\">",
+			"items",
+			"subs",
+			".subscribe",
+			".featured",
+			" new",
+			" hot",
+			".item",
+			"item1.jpg",
+			"p",
+			"background-image: ",
+			"prod-slide.png",
+			".container",
+			".bread",
+			"images",
+			"image",
+			"images",
+			".search",
+			".new",
+			"  ",
+			"    "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/stylus/1_doc.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 43427,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12618,
+								12618
+							],
+							[
+								12745,
+								12745
+							],
+							[
+								12921,
+								12921
+							],
+							[
+								13048,
+								13048
+							]
+						],
+						"settings":
+						{
+							"auto_indent": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6985.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/coffee/maps.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14465,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9388,
+								9391
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3213.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/templates/blocks/maps/maps.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3704,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								655,
+								655
+							]
+						],
+						"settings":
+						{
+							"auto_indent": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 126.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/templates/blocks/card/card.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11557,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11422,
+								11422
+							]
+						],
+						"settings":
+						{
+							"auto_indent": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5655.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/templates/blocks/timer-badge/timer-badge.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 777,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								239,
+								239
+							]
+						],
+						"settings":
+						{
+							"auto_indent": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/templates/blocks/directory-patient/directory-patient.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5418,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2944,
+								2944
+							]
+						],
+						"settings":
+						{
+							"auto_indent": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1386.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/templates/pages/doctor-consultation.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6297,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								556,
+								556
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.coffeecompile_output":
+	{
+		"height": 100.0
+	},
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "docua.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 260.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

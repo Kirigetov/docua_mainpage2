@@ -1,0 +1,179 @@
+.articles-list, .med-articles-list
+    clearfix()
+    background: #FFF 
+    box-shadow: 0 2px 4px rgba(0, 64, 76, 0.15)
+    margin-bottom: 21px
+    .article-list-item
+        position relative
+        clearfix()
+        padding: 21px 21px 15px
+        border-bottom: 1px dashed #c0d2d6   
+        &:last-child 
+            border: none
+        &:first-child 
+            display block
+        &__image
+            float left
+            position: relative
+            border-radius border_radius_sm 
+            margin-bottom: 6px
+            margin-top 3px
+            @media screen560
+                float: none
+                margin: 0 auto 10px 
+            img 
+                max-width: 100%
+        .info-list
+            font-size: 0
+            text-align: center
+            position: absolute
+            bottom: 0
+            left: 0
+            right: 0
+            background-color: rgba(white, 0.63)
+            padding: 7px 7px 6px 
+            li
+                a
+                    &:hover
+                        &:before
+                            opacity: 1
+                            visibility: visible
+                    &:after
+                        display: none
+        &__title
+            margin-top 0
+            margin-bottom 12px
+            font-weight 700
+            font-size 16px
+            a
+                color: #4b89d3
+                
+        &__content
+            // max-height 111px
+            overflow hidden
+            font-size: 15px
+            line-height: 20px
+        &__meta
+            font-size: 0
+            padding: 0 0 10px
+            li
+                font-size: 13px
+                display: inline-block
+                vertical-align: top
+                position: relative
+                padding: 0 25px 0 0
+                &.last-child
+                    &:before
+                        display: none
+                &:before
+                    content: "" 
+                    position: absolute
+                    top: 50%
+                    right: 12px
+                    width: 1px
+                    height: 10px
+                    margin-top: -5px
+                    opacity: 0.28
+                    background-color: #00829b
+                    @media phone
+                        display: none
+                a
+                    color: #4b89d3
+        &__category
+            span
+                color text_blue
+        &__themes
+            span
+                color text_blue
+        &__date
+            color text_blue
+            span
+                padding-right 5px
+                display none
+
+    &.blog-list
+        @media tablet
+            margin- 20px
+        .article-list-item
+            float left
+            width 50%
+            &__inner
+                box-shadow 0 2px 4px #e3e4ed
+                &:hover
+                    box-shadow 0 4px 8px #CDCDCF
+            &:first-child
+                padding-right 20px
+            &__title
+                max-height 51px
+                overflow hidden
+            &__image
+                width 165px
+                height 194px
+                img
+                    width 100%
+                    height 100%
+                    border-radius border_radius_sm 
+            &__right-column
+                height 194px
+                padding-top 14px
+                padding-right 10px
+                padding-left 179px
+                background #fff
+    &.news-list
+        .article-list-item
+            width 100%
+            clearfix()
+            &:not(:first-child)
+                // border-top 1px dashed #ccc
+            &__title
+                font-size 18px
+            &__image
+                width 200px
+                height 133px
+                overflow hidden
+                img
+                    width 100%
+            &__right-column
+                padding-right 10px
+                padding-left 220px
+                @media screen560
+                    padding-left: 0
+            @media phone
+                &__category, &__themes
+                    float none
+                    display block
+                &__date
+                    float none
+                    color text_color
+                    span
+                        display inline-block
+                        color text_blue
+
+            @media screen560
+                &__image
+                    float none
+                    width 100%
+                    height auto
+                    max-height 300px
+                &__right-column
+                    margin-top 20px
+                    padding-left 0
+    &.blog-page
+        .article-list-item
+            &__image
+                width 200px
+                height 133px
+                overflow hidden
+                border-radius border_radius_sm
+            &__right-column
+                padding-left 220px
+                @media screen560
+                    padding-left: 0
+            &__title
+                font-size 18px
+            &__content
+                // max-height 80px
+            
+            @media tablet_desktop
+                &__inner
+                    position relative

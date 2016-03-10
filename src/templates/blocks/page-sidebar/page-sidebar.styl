@@ -1,0 +1,74 @@
+.page-sidebar
+    background-color: #e5f2f5
+    border-radius: 5px
+    margin: 0 15px 0 0 
+    padding 21px 0 22px
+    @media phone
+        padding 15px 0
+        margin: 0 0 20px 0
+    &:before
+        content: "" 
+        position: absolute
+        top: 39px
+        left: 100%
+        display: block
+        border-style: solid
+        border-width: 37px 16px 0 0
+        border-color: #e5f2f5 transparent transparent
+        transform: rotate(20deg)
+        margin-left: -35px
+        @media phone
+            display: none
+    &__list
+        margin 0
+        padding 0
+        list-style none
+        font-size 16px
+        line-height 1.333
+        @media phone
+            font-size 16px
+        &-item
+            // margin-bottom 27px
+            margin: 0
+            padding: 14px 0 13px 
+            position: relative
+            @media phone
+                padding: 12px 0 
+            &:last-child
+                margin-bottom 0
+        &-link
+            display block
+            padding 0 35px !important
+            text-decoration none !important
+            position: relative
+            outline: none !important
+            @media phone
+                padding: 0 15px !important
+            &:hover
+                background-color transparent !important
+            &:focus
+                background: none !important
+            &.active
+                span
+                    display: inline
+                    border-bottom-color transparent
+                    color: #5e6e71
+                    font-weight: 700 
+            span
+                border-bottom 1px dashed
+                color: #4b89d3
+            
+article
+    a 
+        word-wrap: break-word
+        
+.rich-content
+    position relative
+.rich-box
+    display: none
+    &.active
+        display: block
+    ul
+        margin-bottom: 6px
+        padding: 0 !important
+    

@@ -1,0 +1,29 @@
+- var linkPrefix = ''
+- var modalToggle = ''
+
+if showModals
+    - linkPrefix = '#'
+    - modalToggle = 'modal'
+else
+    - linkPrefix = '/modals.html#'
+    - modalToggle = ''
+
+    +e.title.footer-tab_header.js-tab__header-c 
+        span.hidden-xs Звоните нам
+        span.tab__header.visible-xs Контакты
+            span.btn__mobile.js-btn__mobile 
+        .contacts-wrap.tab-close.js-content-hide
+            p Пн.-вс: с 9:00 до 21:00
+            if footerMobile
+                +e("span").phone-number +38 (067) 209-78-987
+            else
+                +e.phone
+                    span.phone_general= site.phoneLandline
+                    span.phone_mts= site.phoneMts
+                    span.phone_life= site.phoneLife
+                    span.phone_kyivstar= site.phoneKyivstar
+
+                +e('span').callback.first-example
+                    a.dotted.callback_phone(href="#callback", data-toggle="modal", title="Обратный звонок") Обратный звонок
+                +e('span').callback
+                    a.dotted.callback_pen(href="#doc-request-schedule", data-toggle="modal", title="Отправить заявку") Отправить заявку   
